@@ -1,0 +1,378 @@
+[
+  {
+    "href": "/playbook/reserve-space-with-aspect-ratio",
+    "slug": "reserve-space-with-aspect-ratio",
+    "ariaLabel": "Prevent layout shifts with aspect ratio",
+    "title": "Prevent layout shifts with aspect ratio",
+    "desc": "",
+    "codes": []
+  },
+  {
+    "href": "/playbook/use-text-balance",
+    "slug": "use-text-balance",
+    "ariaLabel": "Balance heading text for easier reading",
+    "title": "Balance heading text for easier reading",
+    "desc": "",
+    "codes": []
+  },
+  {
+    "href": "/playbook/use-tabular-nums-for-data",
+    "slug": "use-tabular-nums-for-data",
+    "ariaLabel": "Align numbers with tabular-nums",
+    "title": "Align numbers with tabular-nums",
+    "desc": "",
+    "codes": []
+  },
+  {
+    "href": "/playbook/use-large-touch-targets",
+    "slug": "use-large-touch-targets",
+    "ariaLabel": "Use 44px touch targets for accessibility",
+    "title": "Use 44px touch targets for accessibility",
+    "desc": "",
+    "codes": []
+  },
+  {
+    "href": "/playbook/use-concentric-border-radius",
+    "slug": "use-concentric-border-radius",
+    "ariaLabel": "Match border radius on nested elements",
+    "title": "Match border radius on nested elements",
+    "desc": "",
+    "codes": []
+  },
+  {
+    "href": "/playbook/add-scale-on-press",
+    "slug": "add-scale-on-press",
+    "ariaLabel": "Add scale feedback to pressed buttons",
+    "title": "Add scale feedback to pressed buttons",
+    "desc": "",
+    "codes": []
+  },
+  {
+    "href": "/playbook/anchor-popovers-to-triggers",
+    "slug": "anchor-popovers-to-triggers",
+    "ariaLabel": "Animate popovers from their trigger",
+    "title": "Animate popovers from their trigger",
+    "desc": "",
+    "codes": []
+  },
+  {
+    "href": "/playbook/group-with-space-not-lines",
+    "slug": "group-with-space-not-lines",
+    "ariaLabel": "Group content with spacing, not dividers",
+    "title": "Group content with spacing, not dividers",
+    "desc": "",
+    "codes": []
+  },
+  {
+    "href": "/playbook/peek-the-next-scroll-item",
+    "slug": "peek-the-next-scroll-item",
+    "ariaLabel": "Preview the next item in scroll lists",
+    "title": "Preview the next item in scroll lists",
+    "desc": "",
+    "codes": []
+  },
+  {
+    "href": "/playbook/outline-images-neutrally",
+    "slug": "outline-images-neutrally",
+    "ariaLabel": "Use neutral borders around images",
+    "title": "Use neutral borders around images",
+    "desc": "",
+    "codes": []
+  },
+  {
+    "href": "/playbook/clamp-overflowing-titles",
+    "slug": "clamp-overflowing-titles",
+    "ariaLabel": "Truncate long titles in small spaces",
+    "title": "Truncate long titles in small spaces",
+    "desc": "",
+    "codes": []
+  },
+  {
+    "href": "/playbook/keep-secondary-text-readable",
+    "slug": "keep-secondary-text-readable",
+    "ariaLabel": "Improve contrast for muted text",
+    "title": "Improve contrast for muted text",
+    "desc": "",
+    "codes": []
+  },
+  {
+    "href": "/playbook/avoid-entering-from-scale-zero",
+    "slug": "avoid-entering-from-scale-zero",
+    "ariaLabel": "Avoid scale-zero entrance animations",
+    "title": "Avoid scale-zero entrance animations",
+    "desc": "",
+    "codes": []
+  },
+  {
+    "href": "/playbook/use-structural-skeletons",
+    "slug": "use-structural-skeletons",
+    "ariaLabel": "Match loading skeletons to real content",
+    "title": "Match loading skeletons to real content",
+    "desc": "",
+    "codes": []
+  },
+  {
+    "href": "/playbook/limit-accent-color-usage",
+    "slug": "limit-accent-color-usage",
+    "ariaLabel": "Limit each view to one accent color",
+    "title": "Limit each view to one accent color",
+    "desc": "",
+    "codes": []
+  },
+  {
+    "href": "/playbook/cap-line-length",
+    "slug": "cap-line-length",
+    "ariaLabel": "Keep body text lines easy to read",
+    "title": "Keep body text lines easy to read",
+    "desc": "",
+    "codes": []
+  },
+  {
+    "href": "/playbook/use-shadow-for-elevation",
+    "slug": "use-shadow-for-elevation",
+    "ariaLabel": "Use shadows to show visual depth",
+    "title": "Use shadows to show visual depth",
+    "desc": "",
+    "codes": []
+  },
+  {
+    "href": "/playbook/show-visible-focus-rings",
+    "slug": "show-visible-focus-rings",
+    "ariaLabel": "Add visible keyboard focus rings",
+    "title": "Add visible keyboard focus rings",
+    "desc": "",
+    "codes": []
+  },
+  {
+    "href": "/playbook/show-errors-beside-fields",
+    "slug": "show-errors-beside-fields",
+    "ariaLabel": "Show form errors next to each field",
+    "title": "Show form errors next to each field",
+    "desc": "",
+    "codes": []
+  },
+  {
+    "href": "/playbook/label-every-form-field",
+    "slug": "label-every-form-field",
+    "ariaLabel": "Add visible labels to every form field",
+    "title": "Add visible labels to every form field",
+    "desc": "",
+    "codes": []
+  },
+  {
+    "href": "/playbook/give-empty-states-one-action",
+    "slug": "give-empty-states-one-action",
+    "ariaLabel": "Give empty states one clear action",
+    "title": "Give empty states one clear action",
+    "desc": "",
+    "codes": []
+  },
+  {
+    "href": "/playbook/use-sentence-case-labels",
+    "slug": "use-sentence-case-labels",
+    "ariaLabel": "Use sentence case for UI labels",
+    "title": "Use sentence case for UI labels",
+    "desc": "",
+    "codes": []
+  },
+  {
+    "href": "/playbook/pair-status-with-labels",
+    "slug": "pair-status-with-labels",
+    "ariaLabel": "Never use color alone for status",
+    "title": "Never use color alone for status",
+    "desc": "",
+    "codes": []
+  },
+  {
+    "href": "/playbook/use-ease-out-on-enter",
+    "slug": "use-ease-out-on-enter",
+    "ariaLabel": "Use ease-out for entrance animations",
+    "title": "Use ease-out for entrance animations",
+    "desc": "",
+    "codes": []
+  },
+  {
+    "href": "/playbook/align-icons-optically",
+    "slug": "align-icons-optically",
+    "ariaLabel": "Align icons by eye for better balance",
+    "title": "Align icons by eye for better balance",
+    "desc": "",
+    "codes": []
+  },
+  {
+    "href": "/playbook/match-icon-stroke-weight",
+    "slug": "match-icon-stroke-weight",
+    "ariaLabel": "Match icon stroke weight to text",
+    "title": "Match icon stroke weight to text",
+    "desc": "",
+    "codes": []
+  },
+  {
+    "href": "/playbook/use-outline-icons-by-default",
+    "slug": "use-outline-icons-by-default",
+    "ariaLabel": "Use outline icons for default states",
+    "title": "Use outline icons for default states",
+    "desc": "",
+    "codes": []
+  },
+  {
+    "href": "/playbook/avoid-glow-primary-actions",
+    "slug": "avoid-glow-primary-actions",
+    "ariaLabel": "Avoid glow effects on primary buttons",
+    "title": "Avoid glow effects on primary buttons",
+    "desc": "",
+    "codes": []
+  },
+  {
+    "href": "/playbook/animate-icon-state-changes",
+    "slug": "animate-icon-state-changes",
+    "ariaLabel": "Animate icon state changes smoothly",
+    "title": "Animate icon state changes smoothly",
+    "desc": "",
+    "codes": []
+  },
+  {
+    "href": "/playbook/give-targets-breathing-room",
+    "slug": "give-targets-breathing-room",
+    "ariaLabel": "Add space between nearby controls",
+    "title": "Add space between nearby controls",
+    "desc": "",
+    "codes": []
+  },
+  {
+    "href": "/playbook/inset-primary-actions",
+    "slug": "inset-primary-actions",
+    "ariaLabel": "Keep full-width buttons inside page margins",
+    "title": "Keep full-width buttons inside page margins",
+    "desc": "",
+    "codes": []
+  },
+  {
+    "href": "/playbook/tighten-heading-line-height",
+    "slug": "tighten-heading-line-height",
+    "ariaLabel": "Use tighter line height for headings",
+    "title": "Use tighter line height for headings",
+    "desc": "",
+    "codes": []
+  },
+  {
+    "href": "/playbook/tune-tracking-by-size",
+    "slug": "tune-tracking-by-size",
+    "ariaLabel": "Adjust letter spacing for large text",
+    "title": "Adjust letter spacing for large text",
+    "desc": "",
+    "codes": []
+  },
+  {
+    "href": "/playbook/confirm-destructive-actions",
+    "slug": "confirm-destructive-actions",
+    "ariaLabel": "Confirm destructive actions before they run",
+    "title": "Confirm destructive actions before they run",
+    "desc": "",
+    "codes": []
+  },
+  {
+    "href": "/playbook/fade-scroll-edges",
+    "slug": "fade-scroll-edges",
+    "ariaLabel": "Fade the edges of scrollable lists",
+    "title": "Fade the edges of scrollable lists",
+    "desc": "",
+    "codes": []
+  },
+  {
+    "href": "/playbook/stagger-infrequent-entrances",
+    "slug": "stagger-infrequent-entrances",
+    "ariaLabel": "Stagger hero animations on first load",
+    "title": "Stagger hero animations on first load",
+    "desc": "",
+    "codes": []
+  },
+  {
+    "href": "/playbook/keep-exits-subtle",
+    "slug": "keep-exits-subtle",
+    "ariaLabel": "Keep exit animations short and subtle",
+    "title": "Keep exit animations short and subtle",
+    "desc": "",
+    "codes": []
+  },
+  {
+    "href": "/playbook/warm-toolbar-tooltips",
+    "slug": "warm-toolbar-tooltips",
+    "ariaLabel": "Show nearby tooltips faster",
+    "title": "Show nearby tooltips faster",
+    "desc": "",
+    "codes": []
+  },
+  {
+    "href": "/playbook/use-interruptible-transitions",
+    "slug": "use-interruptible-transitions",
+    "ariaLabel": "Use interruptible CSS transitions",
+    "title": "Use interruptible CSS transitions",
+    "desc": "",
+    "codes": []
+  },
+  {
+    "href": "/playbook/restrain-high-frequency-motion",
+    "slug": "restrain-high-frequency-motion",
+    "ariaLabel": "Avoid repeated animations in routine UI",
+    "title": "Avoid repeated animations in routine UI",
+    "desc": "",
+    "codes": []
+  },
+  {
+    "href": "/playbook/use-ease-not-spring-for-feedback",
+    "slug": "use-ease-not-spring-for-feedback",
+    "ariaLabel": "Use ease-out instead of springs for feedback",
+    "title": "Use ease-out instead of springs for feedback",
+    "desc": "",
+    "codes": []
+  },
+  {
+    "href": "/playbook/fade-menus-out",
+    "slug": "fade-menus-out",
+    "ariaLabel": "Fade menus out when they close",
+    "title": "Fade menus out when they close",
+    "desc": "",
+    "codes": []
+  },
+  {
+    "href": "/playbook/reserve-brand-color-for-links",
+    "slug": "reserve-brand-color-for-links",
+    "ariaLabel": "Reserve brand colors for links and actions",
+    "title": "Reserve brand colors for links and actions",
+    "desc": "",
+    "codes": []
+  },
+  {
+    "href": "/playbook/use-solid-modal-scrims",
+    "slug": "use-solid-modal-scrims",
+    "ariaLabel": "Use solid modal backdrops instead of blur",
+    "title": "Use solid modal backdrops instead of blur",
+    "desc": "",
+    "codes": []
+  },
+  {
+    "href": "/playbook/fade-truncated-text",
+    "slug": "fade-truncated-text",
+    "ariaLabel": "Fade overflowing text instead of clipping it",
+    "title": "Fade overflowing text instead of clipping it",
+    "desc": "",
+    "codes": []
+  },
+  {
+    "href": "/playbook/enter-and-exit-on-the-same-path",
+    "slug": "enter-and-exit-on-the-same-path",
+    "ariaLabel": "Use matching enter and exit animations",
+    "title": "Use matching enter and exit animations",
+    "desc": "",
+    "codes": []
+  },
+  {
+    "href": "/playbook/blur-imperfect-label-morphs",
+    "slug": "blur-imperfect-label-morphs",
+    "ariaLabel": "Soften label changes with a short blur",
+    "title": "Soften label changes with a short blur",
+    "desc": "",
+    "codes": []
+  }
+]

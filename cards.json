@@ -1,0 +1,267 @@
+[
+  {
+    "url": "/playbook/reserve-space-with-aspect-ratio",
+    "text": "Prevent layout shifts with aspect ratio Set `aspect-ratio` so nearby content does not jump while an image loads.",
+    "raw": "<div class=\"relative isolate flex flex-col gap-3 rounded-lg border border-line-default bg-surface-default p-3 transition-colors h-full transition-colors group-hover:border-content-extra-muted\"><div class=\"flex flex-col gap-0.5\"><div class=\"type-body-md font-[450] text-content-primary\">Prevent layout"
+  },
+  {
+    "url": "/playbook/use-text-balance",
+    "text": "Balance heading text for easier reading Use `text-balance` for headings and `text-pretty` for body copy.",
+    "raw": "<div class=\"relative isolate flex flex-col gap-3 rounded-lg border border-line-default bg-surface-default p-3 transition-colors h-full transition-colors group-hover:border-content-extra-muted\"><div class=\"flex flex-col gap-0.5\"><div class=\"type-body-md font-[450] text-content-primary\">Balance headin"
+  },
+  {
+    "url": "/playbook/use-tabular-nums-for-data",
+    "text": "Align numbers with tabular-nums Use `tabular-nums` to align numbers in tables and data-heavy UI.",
+    "raw": "<div class=\"relative isolate flex flex-col gap-3 rounded-lg border border-line-default bg-surface-default p-3 transition-colors h-full transition-colors group-hover:border-content-extra-muted\"><div class=\"flex flex-col gap-0.5\"><div class=\"type-body-md font-[450] text-content-primary\">Align numbers "
+  },
+  {
+    "url": "/playbook/use-large-touch-targets",
+    "text": "Use 44px touch targets for accessibility Give buttons and controls a touch target of at least 44 by 44px.",
+    "raw": "<div class=\"relative isolate flex flex-col gap-3 rounded-lg border border-line-default bg-surface-default p-3 transition-colors h-full transition-colors group-hover:border-content-extra-muted\"><div class=\"flex flex-col gap-0.5\"><div class=\"type-body-md font-[450] text-content-primary\">Use 44px touch"
+  },
+  {
+    "url": "/playbook/use-concentric-border-radius",
+    "text": "Match border radius on nested elements Set the nested element&#39;s radius to the parent&#39;s radius minus its padding. Formula: `inner radius = outer radius - padding`",
+    "raw": "<div class=\"relative isolate flex flex-col gap-3 rounded-lg border border-line-default bg-surface-default p-3 transition-colors h-full transition-colors group-hover:border-content-extra-muted\"><div class=\"flex flex-col gap-0.5\"><div class=\"type-body-md font-[450] text-content-primary\">Match border r"
+  },
+  {
+    "url": "/playbook/add-scale-on-press",
+    "text": "Add scale feedback to pressed buttons Add subtle press feedback with `:active` and a scale near 0.96.",
+    "raw": "<div class=\"relative isolate flex flex-col gap-3 rounded-lg border border-line-default bg-surface-default p-3 transition-colors h-full transition-colors group-hover:border-content-extra-muted\"><div class=\"flex flex-col gap-0.5\"><div class=\"type-body-md font-[450] text-content-primary\">Add scale feed"
+  },
+  {
+    "url": "/playbook/anchor-popovers-to-triggers",
+    "text": "Animate popovers from their trigger Animate each popover from the control that opened it.",
+    "raw": "<div class=\"relative isolate flex flex-col gap-3 rounded-lg border border-line-default bg-surface-default p-3 transition-colors h-full transition-colors group-hover:border-content-extra-muted\"><div class=\"flex flex-col gap-0.5\"><div class=\"type-body-md font-[450] text-content-primary\">Animate popove"
+  },
+  {
+    "url": "/playbook/group-with-space-not-lines",
+    "text": "Group content with spacing, not dividers Use spacing to group related content before adding divider lines.",
+    "raw": "<div class=\"relative isolate flex flex-col gap-3 rounded-lg border border-line-default bg-surface-default p-3 transition-colors h-full transition-colors group-hover:border-content-extra-muted\"><div class=\"flex flex-col gap-0.5\"><div class=\"type-body-md font-[450] text-content-primary\">Group content "
+  },
+  {
+    "url": "/playbook/peek-the-next-scroll-item",
+    "text": "Preview the next item in scroll lists Show 16 to 32px of the next item to make horizontal scrolling clear.",
+    "raw": "<div class=\"relative isolate flex flex-col gap-3 rounded-lg border border-line-default bg-surface-default p-3 transition-colors h-full transition-colors group-hover:border-content-extra-muted\"><div class=\"flex flex-col gap-0.5\"><div class=\"type-body-md font-[450] text-content-primary\">Preview the ne"
+  },
+  {
+    "url": "/playbook/outline-images-neutrally",
+    "text": "Use neutral borders around images Use a thin neutral outline instead of a tinted ring.",
+    "raw": "<div class=\"relative isolate flex flex-col gap-3 rounded-lg border border-line-default bg-surface-default p-3 transition-colors h-full transition-colors group-hover:border-content-extra-muted\"><div class=\"flex flex-col gap-0.5\"><div class=\"type-body-md font-[450] text-content-primary\">Use neutral bo"
+  },
+  {
+    "url": "/playbook/clamp-overflowing-titles",
+    "text": "Truncate long titles in small spaces Use `line-clamp` or `truncate` when space is tight.",
+    "raw": "<div class=\"relative isolate flex flex-col gap-3 rounded-lg border border-line-default bg-surface-default p-3 transition-colors h-full transition-colors group-hover:border-content-extra-muted\"><div class=\"flex flex-col gap-0.5\"><div class=\"type-body-md font-[450] text-content-primary\">Truncate long "
+  },
+  {
+    "url": "/playbook/keep-secondary-text-readable",
+    "text": "Improve contrast for muted text Give muted text enough color contrast to stay easy to read.",
+    "raw": "<div class=\"relative isolate flex flex-col gap-3 rounded-lg border border-line-default bg-surface-default p-3 transition-colors h-full transition-colors group-hover:border-content-extra-muted\"><div class=\"flex flex-col gap-0.5\"><div class=\"type-body-md font-[450] text-content-primary\">Improve contra"
+  },
+  {
+    "url": "/playbook/avoid-entering-from-scale-zero",
+    "text": "Avoid scale-zero entrance animations Start entrance animations near 95% size instead of scaling up from zero.",
+    "raw": "<div class=\"relative isolate flex flex-col gap-3 rounded-lg border border-line-default bg-surface-default p-3 transition-colors h-full transition-colors group-hover:border-content-extra-muted\"><div class=\"flex flex-col gap-0.5\"><div class=\"type-body-md font-[450] text-content-primary\">Avoid scale-ze"
+  },
+  {
+    "url": "/playbook/use-structural-skeletons",
+    "text": "Match loading skeletons to real content Match loading skeletons to the content they replace, and skip spinners when possible.",
+    "raw": "<div class=\"relative isolate flex flex-col gap-3 rounded-lg border border-line-default bg-surface-default p-3 transition-colors h-full transition-colors group-hover:border-content-extra-muted\"><div class=\"flex flex-col gap-0.5\"><div class=\"type-body-md font-[450] text-content-primary\">Match loading "
+  },
+  {
+    "url": "/playbook/limit-accent-color-usage",
+    "text": "Limit each view to one accent color Use one accent per view. Keep secondary actions neutral.",
+    "raw": "<div class=\"relative isolate flex flex-col gap-3 rounded-lg border border-line-default bg-surface-default p-3 transition-colors h-full transition-colors group-hover:border-content-extra-muted\"><div class=\"flex flex-col gap-0.5\"><div class=\"type-body-md font-[450] text-content-primary\">Limit each vie"
+  },
+  {
+    "url": "/playbook/cap-line-length",
+    "text": "Keep body text lines easy to read Keep text lines between 60 and 75 characters for easier reading.",
+    "raw": "<div class=\"relative isolate flex flex-col gap-3 rounded-lg border border-line-default bg-surface-default p-3 transition-colors h-full transition-colors group-hover:border-content-extra-muted\"><div class=\"flex flex-col gap-0.5\"><div class=\"type-body-md font-[450] text-content-primary\">Keep body text"
+  },
+  {
+    "url": "/playbook/use-shadow-for-elevation",
+    "text": "Use shadows to show visual depth Use shadows to show depth. Use borders to show structure.",
+    "raw": "<div class=\"relative isolate flex flex-col gap-3 rounded-lg border border-line-default bg-surface-default p-3 transition-colors h-full transition-colors group-hover:border-content-extra-muted\"><div class=\"flex flex-col gap-0.5\"><div class=\"type-body-md font-[450] text-content-primary\">Use shadows to"
+  },
+  {
+    "url": "/playbook/show-visible-focus-rings",
+    "text": "Add visible keyboard focus rings Use `:focus-visible` to keep keyboard focus clear and visible.",
+    "raw": "<div class=\"relative isolate flex flex-col gap-3 rounded-lg border border-line-default bg-surface-default p-3 transition-colors h-full transition-colors group-hover:border-content-extra-muted\"><div class=\"flex flex-col gap-0.5\"><div class=\"type-body-md font-[450] text-content-primary\">Add visible ke"
+  },
+  {
+    "url": "/playbook/show-errors-beside-fields",
+    "text": "Show form errors next to each field Put each validation error directly below its field.",
+    "raw": "<div class=\"relative isolate flex flex-col gap-3 rounded-lg border border-line-default bg-surface-default p-3 transition-colors h-full transition-colors group-hover:border-content-extra-muted\"><div class=\"flex flex-col gap-0.5\"><div class=\"type-body-md font-[450] text-content-primary\">Show form erro"
+  },
+  {
+    "url": "/playbook/label-every-form-field",
+    "text": "Add visible labels to every form field Use a visible label. Do not use placeholder text as the only label.",
+    "raw": "<div class=\"relative isolate flex flex-col gap-3 rounded-lg border border-line-default bg-surface-default p-3 transition-colors h-full transition-colors group-hover:border-content-extra-muted\"><div class=\"flex flex-col gap-0.5\"><div class=\"type-body-md font-[450] text-content-primary\">Add visible la"
+  },
+  {
+    "url": "/playbook/give-empty-states-one-action",
+    "text": "Give empty states one clear action Give an empty state one clear action, not just an explanation.",
+    "raw": "<div class=\"relative isolate flex flex-col gap-3 rounded-lg border border-line-default bg-surface-default p-3 transition-colors h-full transition-colors group-hover:border-content-extra-muted\"><div class=\"flex flex-col gap-0.5\"><div class=\"type-body-md font-[450] text-content-primary\">Give empty sta"
+  },
+  {
+    "url": "/playbook/use-sentence-case-labels",
+    "text": "Use sentence case for UI labels Write labels in sentence case, not all caps.",
+    "raw": "<div class=\"relative isolate flex flex-col gap-3 rounded-lg border border-line-default bg-surface-default p-3 transition-colors h-full transition-colors group-hover:border-content-extra-muted\"><div class=\"flex flex-col gap-0.5\"><div class=\"type-body-md font-[450] text-content-primary\">Use sentence c"
+  },
+  {
+    "url": "/playbook/pair-status-with-labels",
+    "text": "Never use color alone for status Add text or an icon so status is never shown by color alone.",
+    "raw": "<div class=\"relative isolate flex flex-col gap-3 rounded-lg border border-line-default bg-surface-default p-3 transition-colors h-full transition-colors group-hover:border-content-extra-muted\"><div class=\"flex flex-col gap-0.5\"><div class=\"type-body-md font-[450] text-content-primary\">Never use colo"
+  },
+  {
+    "url": "/playbook/use-ease-out-on-enter",
+    "text": "Use ease-out for entrance animations Use `ease-out` for entrances. `ease-in` feels slow when something opens.",
+    "raw": "<div class=\"relative isolate flex flex-col gap-3 rounded-lg border border-line-default bg-surface-default p-3 transition-colors h-full transition-colors group-hover:border-content-extra-muted\"><div class=\"flex flex-col gap-0.5\"><div class=\"type-body-md font-[450] text-content-primary\">Use ease-out f"
+  },
+  {
+    "url": "/playbook/align-icons-optically",
+    "text": "Align icons by eye for better balance Nudge icons when geometric centering does not look visually balanced.",
+    "raw": "<div class=\"relative isolate flex flex-col gap-3 rounded-lg border border-line-default bg-surface-default p-3 transition-colors h-full transition-colors group-hover:border-content-extra-muted\"><div class=\"flex flex-col gap-0.5\"><div class=\"type-body-md font-[450] text-content-primary\">Align icons by"
+  },
+  {
+    "url": "/playbook/match-icon-stroke-weight",
+    "text": "Match icon stroke weight to text Use a 2px stroke beside semibold text and a 1.5px stroke beside regular text.",
+    "raw": "<div class=\"relative isolate flex flex-col gap-3 rounded-lg border border-line-default bg-surface-default p-3 transition-colors h-full transition-colors group-hover:border-content-extra-muted\"><div class=\"flex flex-col gap-0.5\"><div class=\"type-body-md font-[450] text-content-primary\">Match icon str"
+  },
+  {
+    "url": "/playbook/use-outline-icons-by-default",
+    "text": "Use outline icons for default states Use outline icons by default. Use a fill for the active state.",
+    "raw": "<div class=\"relative isolate flex flex-col gap-3 rounded-lg border border-line-default bg-surface-default p-3 transition-colors h-full transition-colors group-hover:border-content-extra-muted\"><div class=\"flex flex-col gap-0.5\"><div class=\"type-body-md font-[450] text-content-primary\">Use outline ic"
+  },
+  {
+    "url": "/playbook/avoid-glow-primary-actions",
+    "text": "Avoid glow effects on primary buttons Avoid glow effects on primary buttons; use contrast and spacing instead.",
+    "raw": "<div class=\"relative isolate flex flex-col gap-3 rounded-lg border border-line-default bg-surface-default p-3 transition-colors h-full transition-colors group-hover:border-content-extra-muted\"><div class=\"flex flex-col gap-0.5\"><div class=\"type-body-md font-[450] text-content-primary\">Avoid glow eff"
+  },
+  {
+    "url": "/playbook/animate-icon-state-changes",
+    "text": "Animate icon state changes smoothly Cross-fade changing icons with opacity, scale, and blur for smoother feedback.",
+    "raw": "<div class=\"relative isolate flex flex-col gap-3 rounded-lg border border-line-default bg-surface-default p-3 transition-colors h-full transition-colors group-hover:border-content-extra-muted\"><div class=\"flex flex-col gap-0.5\"><div class=\"type-body-md font-[450] text-content-primary\">Animate icon s"
+  },
+  {
+    "url": "/playbook/give-targets-breathing-room",
+    "text": "Add space between nearby controls Leave about 12px between nearby bordered controls.",
+    "raw": "<div class=\"relative isolate flex flex-col gap-3 rounded-lg border border-line-default bg-surface-default p-3 transition-colors h-full transition-colors group-hover:border-content-extra-muted\"><div class=\"flex flex-col gap-0.5\"><div class=\"type-body-md font-[450] text-content-primary\">Add space betw"
+  },
+  {
+    "url": "/playbook/inset-primary-actions",
+    "text": "Keep full-width buttons inside page margins Keep full-width buttons inside the page margins, not edge to edge.",
+    "raw": "<div class=\"relative isolate flex flex-col gap-3 rounded-lg border border-line-default bg-surface-default p-3 transition-colors h-full transition-colors group-hover:border-content-extra-muted\"><div class=\"flex flex-col gap-0.5\"><div class=\"type-body-md font-[450] text-content-primary\">Keep full-widt"
+  },
+  {
+    "url": "/playbook/tighten-heading-line-height",
+    "text": "Use tighter line height for headings Use a line height near 1.1 for short headings.",
+    "raw": "<div class=\"relative isolate flex flex-col gap-3 rounded-lg border border-line-default bg-surface-default p-3 transition-colors h-full transition-colors group-hover:border-content-extra-muted\"><div class=\"flex flex-col gap-0.5\"><div class=\"type-body-md font-[450] text-content-primary\">Use tighter li"
+  },
+  {
+    "url": "/playbook/tune-tracking-by-size",
+    "text": "Adjust letter spacing for large text Large display text often needs slightly tighter letter spacing.",
+    "raw": "<div class=\"relative isolate flex flex-col gap-3 rounded-lg border border-line-default bg-surface-default p-3 transition-colors h-full transition-colors group-hover:border-content-extra-muted\"><div class=\"flex flex-col gap-0.5\"><div class=\"type-body-md font-[450] text-content-primary\">Adjust letter "
+  },
+  {
+    "url": "/playbook/confirm-destructive-actions",
+    "text": "Confirm destructive actions before they run Ask for confirmation before deleting data or taking an irreversible action.",
+    "raw": "<div class=\"relative isolate flex flex-col gap-3 rounded-lg border border-line-default bg-surface-default p-3 transition-colors h-full transition-colors group-hover:border-content-extra-muted\"><div class=\"flex flex-col gap-0.5\"><div class=\"type-body-md font-[450] text-content-primary\">Confirm destru"
+  },
+  {
+    "url": "/playbook/fade-scroll-edges",
+    "text": "Fade the edges of scrollable lists Use a `mask-image` fade to show where a scrollable list continues.",
+    "raw": "<div class=\"relative isolate flex flex-col gap-3 rounded-lg border border-line-default bg-surface-default p-3 transition-colors h-full transition-colors group-hover:border-content-extra-muted\"><div class=\"flex flex-col gap-0.5\"><div class=\"type-body-md font-[450] text-content-primary\">Fade the edges"
+  },
+  {
+    "url": "/playbook/stagger-infrequent-entrances",
+    "text": "Stagger hero animations on first load Stagger hero animations by about 100ms on first load, not during routine interactions.",
+    "raw": "<div class=\"relative isolate flex flex-col gap-3 rounded-lg border border-line-default bg-surface-default p-3 transition-colors h-full transition-colors group-hover:border-content-extra-muted\"><div class=\"flex flex-col gap-0.5\"><div class=\"type-body-md font-[450] text-content-primary\">Stagger hero a"
+  },
+  {
+    "url": "/playbook/keep-exits-subtle",
+    "text": "Keep exit animations short and subtle Keep exit animations short with a small `translateY` movement.",
+    "raw": "<div class=\"relative isolate flex flex-col gap-3 rounded-lg border border-line-default bg-surface-default p-3 transition-colors h-full transition-colors group-hover:border-content-extra-muted\"><div class=\"flex flex-col gap-0.5\"><div class=\"type-body-md font-[450] text-content-primary\">Keep exit anim"
+  },
+  {
+    "url": "/playbook/warm-toolbar-tooltips",
+    "text": "Show nearby tooltips faster Show nearby tooltips faster after the first tooltip opens.",
+    "raw": "<div class=\"relative isolate flex flex-col gap-3 rounded-lg border border-line-default bg-surface-default p-3 transition-colors h-full transition-colors group-hover:border-content-extra-muted\"><div class=\"flex flex-col gap-0.5\"><div class=\"type-body-md font-[450] text-content-primary\">Show nearby to"
+  },
+  {
+    "url": "/playbook/use-interruptible-transitions",
+    "text": "Use interruptible CSS transitions Use CSS transitions for interactive open and close states.",
+    "raw": "<div class=\"relative isolate flex flex-col gap-3 rounded-lg border border-line-default bg-surface-default p-3 transition-colors h-full transition-colors group-hover:border-content-extra-muted\"><div class=\"flex flex-col gap-0.5\"><div class=\"type-body-md font-[450] text-content-primary\">Use interrupti"
+  },
+  {
+    "url": "/playbook/restrain-high-frequency-motion",
+    "text": "Avoid repeated animations in routine UI Animate first-load entrances, but keep repeated actions like tab switches instant.",
+    "raw": "<div class=\"relative isolate flex flex-col gap-3 rounded-lg border border-line-default bg-surface-default p-3 transition-colors h-full transition-colors group-hover:border-content-extra-muted\"><div class=\"flex flex-col gap-0.5\"><div class=\"type-body-md font-[450] text-content-primary\">Avoid repeated"
+  },
+  {
+    "url": "/playbook/use-ease-not-spring-for-feedback",
+    "text": "Use ease-out instead of springs for feedback Use `ease-out` for toggles and toasts because springs can wobble.",
+    "raw": "<div class=\"relative isolate flex flex-col gap-3 rounded-lg border border-line-default bg-surface-default p-3 transition-colors h-full transition-colors group-hover:border-content-extra-muted\"><div class=\"flex flex-col gap-0.5\"><div class=\"type-body-md font-[450] text-content-primary\">Use ease-out i"
+  },
+  {
+    "url": "/playbook/fade-menus-out",
+    "text": "Fade menus out when they close Close menus with a short fade. Do not move them far off screen.",
+    "raw": "<div class=\"relative isolate flex flex-col gap-3 rounded-lg border border-line-default bg-surface-default p-3 transition-colors h-full transition-colors group-hover:border-content-extra-muted\"><div class=\"flex flex-col gap-0.5\"><div class=\"type-body-md font-[450] text-content-primary\">Fade menus out"
+  },
+  {
+    "url": "/playbook/reserve-brand-color-for-links",
+    "text": "Reserve brand colors for links and actions Keep headings neutral. Use the brand color for links and actions.",
+    "raw": "<div class=\"relative isolate flex flex-col gap-3 rounded-lg border border-line-default bg-surface-default p-3 transition-colors h-full transition-colors group-hover:border-content-extra-muted\"><div class=\"flex flex-col gap-0.5\"><div class=\"type-body-md font-[450] text-content-primary\">Reserve brand "
+  },
+  {
+    "url": "/playbook/use-solid-modal-scrims",
+    "text": "Use solid modal backdrops instead of blur Use a solid modal backdrop instead of blur to avoid expensive full-screen rendering.",
+    "raw": "<div class=\"relative isolate flex flex-col gap-3 rounded-lg border border-line-default bg-surface-default p-3 transition-colors h-full transition-colors group-hover:border-content-extra-muted\"><div class=\"flex flex-col gap-0.5\"><div class=\"type-body-md font-[450] text-content-primary\">Use solid moda"
+  },
+  {
+    "url": "/playbook/fade-truncated-text",
+    "text": "Fade overflowing text instead of clipping it Fade long labels instead of cutting them off with a hard ellipsis.",
+    "raw": "<div class=\"relative isolate flex flex-col gap-3 rounded-lg border border-line-default bg-surface-default p-3 transition-colors h-full transition-colors group-hover:border-content-extra-muted\"><div class=\"flex flex-col gap-0.5\"><div class=\"type-body-md font-[450] text-content-primary\">Fade overflowi"
+  },
+  {
+    "url": "/playbook/enter-and-exit-on-the-same-path",
+    "text": "Use matching enter and exit animations Use matching enter and exit animations so a surface feels connected.",
+    "raw": "<div class=\"relative isolate flex flex-col gap-3 rounded-lg border border-line-default bg-surface-default p-3 transition-colors h-full transition-colors group-hover:border-content-extra-muted\"><div class=\"flex flex-col gap-0.5\"><div class=\"type-body-md font-[450] text-content-primary\">Use matching e"
+  },
+  {
+    "url": "/playbook/blur-imperfect-label-morphs",
+    "text": "Soften label changes with a short blur Add a short blur when labels change to avoid a distracting visual flash.",
+    "raw": "<div class=\"relative isolate flex flex-col gap-3 rounded-lg border border-line-default bg-surface-default p-3 transition-colors h-full transition-colors group-hover:border-content-extra-muted\"><div class=\"flex flex-col gap-0.5\"><div class=\"type-body-md font-[450] text-content-primary\">Soften label c"
+  },
+  {
+    "url": "/playbook/reserve-space-with-aspect-ratio",
+    "text": "Prevent layout shifts",
+    "raw": "Prevent layout shifts"
+  },
+  {
+    "url": "/playbook/use-text-balance",
+    "text": "Balance headings",
+    "raw": "Balance headings"
+  },
+  {
+    "url": "/playbook/use-tabular-nums-for-data",
+    "text": "Tabular numbers",
+    "raw": "Tabular numbers"
+  },
+  {
+    "url": "/playbook/use-large-touch-targets",
+    "text": "Large touch targets",
+    "raw": "Large touch targets"
+  },
+  {
+    "url": "/playbook/show-visible-focus-rings",
+    "text": "Visible focus rings",
+    "raw": "Visible focus rings"
+  },
+  {
+    "url": "/playbook/label-every-form-field",
+    "text": "Label form fields",
+    "raw": "Label form fields"
+  }
+]

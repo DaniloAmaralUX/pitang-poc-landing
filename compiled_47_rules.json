@@ -1,0 +1,331 @@
+[
+  {
+    "position": 1,
+    "name": "Prevent layout shifts with aspect ratio",
+    "slug": "reserve-space-with-aspect-ratio",
+    "url": "/playbook/reserve-space-with-aspect-ratio",
+    "text": "Prevent layout shifts with aspect ratio Set `aspect-ratio` so nearby content does not jump while an image loads."
+  },
+  {
+    "position": 2,
+    "name": "Balance heading text for easier reading",
+    "slug": "use-text-balance",
+    "url": "/playbook/use-text-balance",
+    "text": "Balance heading text for easier reading Use `text-balance` for headings and `text-pretty` for body copy."
+  },
+  {
+    "position": 3,
+    "name": "Align numbers with tabular-nums",
+    "slug": "use-tabular-nums-for-data",
+    "url": "/playbook/use-tabular-nums-for-data",
+    "text": "Align numbers with tabular-nums Use `tabular-nums` to align numbers in tables and data-heavy UI."
+  },
+  {
+    "position": 4,
+    "name": "Use 44px touch targets for accessibility",
+    "slug": "use-large-touch-targets",
+    "url": "/playbook/use-large-touch-targets",
+    "text": "Use 44px touch targets for accessibility Give buttons and controls a touch target of at least 44 by 44px."
+  },
+  {
+    "position": 5,
+    "name": "Match border radius on nested elements",
+    "slug": "use-concentric-border-radius",
+    "url": "/playbook/use-concentric-border-radius",
+    "text": "Match border radius on nested elements Set the nested element&#39;s radius to the parent&#39;s radius minus its padding. Formula: `inner radius = outer radius - padding`"
+  },
+  {
+    "position": 6,
+    "name": "Add scale feedback to pressed buttons",
+    "slug": "add-scale-on-press",
+    "url": "/playbook/add-scale-on-press",
+    "text": "Add scale feedback to pressed buttons Add subtle press feedback with `:active` and a scale near 0.96."
+  },
+  {
+    "position": 7,
+    "name": "Animate popovers from their trigger",
+    "slug": "anchor-popovers-to-triggers",
+    "url": "/playbook/anchor-popovers-to-triggers",
+    "text": "Animate popovers from their trigger Animate each popover from the control that opened it."
+  },
+  {
+    "position": 8,
+    "name": "Group content with spacing, not dividers",
+    "slug": "group-with-space-not-lines",
+    "url": "/playbook/group-with-space-not-lines",
+    "text": "Group content with spacing, not dividers Use spacing to group related content before adding divider lines."
+  },
+  {
+    "position": 9,
+    "name": "Preview the next item in scroll lists",
+    "slug": "peek-the-next-scroll-item",
+    "url": "/playbook/peek-the-next-scroll-item",
+    "text": "Preview the next item in scroll lists Show 16 to 32px of the next item to make horizontal scrolling clear."
+  },
+  {
+    "position": 10,
+    "name": "Use neutral borders around images",
+    "slug": "outline-images-neutrally",
+    "url": "/playbook/outline-images-neutrally",
+    "text": "Use neutral borders around images Use a thin neutral outline instead of a tinted ring."
+  },
+  {
+    "position": 11,
+    "name": "Truncate long titles in small spaces",
+    "slug": "clamp-overflowing-titles",
+    "url": "/playbook/clamp-overflowing-titles",
+    "text": "Truncate long titles in small spaces Use `line-clamp` or `truncate` when space is tight."
+  },
+  {
+    "position": 12,
+    "name": "Improve contrast for muted text",
+    "slug": "keep-secondary-text-readable",
+    "url": "/playbook/keep-secondary-text-readable",
+    "text": "Improve contrast for muted text Give muted text enough color contrast to stay easy to read."
+  },
+  {
+    "position": 13,
+    "name": "Avoid scale-zero entrance animations",
+    "slug": "avoid-entering-from-scale-zero",
+    "url": "/playbook/avoid-entering-from-scale-zero",
+    "text": "Avoid scale-zero entrance animations Start entrance animations near 95% size instead of scaling up from zero."
+  },
+  {
+    "position": 14,
+    "name": "Match loading skeletons to real content",
+    "slug": "use-structural-skeletons",
+    "url": "/playbook/use-structural-skeletons",
+    "text": "Match loading skeletons to real content Match loading skeletons to the content they replace, and skip spinners when possible."
+  },
+  {
+    "position": 15,
+    "name": "Limit each view to one accent color",
+    "slug": "limit-accent-color-usage",
+    "url": "/playbook/limit-accent-color-usage",
+    "text": "Limit each view to one accent color Use one accent per view. Keep secondary actions neutral."
+  },
+  {
+    "position": 16,
+    "name": "Keep body text lines easy to read",
+    "slug": "cap-line-length",
+    "url": "/playbook/cap-line-length",
+    "text": "Keep body text lines easy to read Keep text lines between 60 and 75 characters for easier reading."
+  },
+  {
+    "position": 17,
+    "name": "Use shadows to show visual depth",
+    "slug": "use-shadow-for-elevation",
+    "url": "/playbook/use-shadow-for-elevation",
+    "text": "Use shadows to show visual depth Use shadows to show depth. Use borders to show structure."
+  },
+  {
+    "position": 18,
+    "name": "Add visible keyboard focus rings",
+    "slug": "show-visible-focus-rings",
+    "url": "/playbook/show-visible-focus-rings",
+    "text": "Add visible keyboard focus rings Use `:focus-visible` to keep keyboard focus clear and visible."
+  },
+  {
+    "position": 19,
+    "name": "Show form errors next to each field",
+    "slug": "show-errors-beside-fields",
+    "url": "/playbook/show-errors-beside-fields",
+    "text": "Show form errors next to each field Put each validation error directly below its field."
+  },
+  {
+    "position": 20,
+    "name": "Add visible labels to every form field",
+    "slug": "label-every-form-field",
+    "url": "/playbook/label-every-form-field",
+    "text": "Add visible labels to every form field Use a visible label. Do not use placeholder text as the only label."
+  },
+  {
+    "position": 21,
+    "name": "Give empty states one clear action",
+    "slug": "give-empty-states-one-action",
+    "url": "/playbook/give-empty-states-one-action",
+    "text": "Give empty states one clear action Give an empty state one clear action, not just an explanation."
+  },
+  {
+    "position": 22,
+    "name": "Use sentence case for UI labels",
+    "slug": "use-sentence-case-labels",
+    "url": "/playbook/use-sentence-case-labels",
+    "text": "Use sentence case for UI labels Write labels in sentence case, not all caps."
+  },
+  {
+    "position": 23,
+    "name": "Never use color alone for status",
+    "slug": "pair-status-with-labels",
+    "url": "/playbook/pair-status-with-labels",
+    "text": "Never use color alone for status Add text or an icon so status is never shown by color alone."
+  },
+  {
+    "position": 24,
+    "name": "Use ease-out for entrance animations",
+    "slug": "use-ease-out-on-enter",
+    "url": "/playbook/use-ease-out-on-enter",
+    "text": "Use ease-out for entrance animations Use `ease-out` for entrances. `ease-in` feels slow when something opens."
+  },
+  {
+    "position": 25,
+    "name": "Align icons by eye for better balance",
+    "slug": "align-icons-optically",
+    "url": "/playbook/align-icons-optically",
+    "text": "Align icons by eye for better balance Nudge icons when geometric centering does not look visually balanced."
+  },
+  {
+    "position": 26,
+    "name": "Match icon stroke weight to text",
+    "slug": "match-icon-stroke-weight",
+    "url": "/playbook/match-icon-stroke-weight",
+    "text": "Match icon stroke weight to text Use a 2px stroke beside semibold text and a 1.5px stroke beside regular text."
+  },
+  {
+    "position": 27,
+    "name": "Use outline icons for default states",
+    "slug": "use-outline-icons-by-default",
+    "url": "/playbook/use-outline-icons-by-default",
+    "text": "Use outline icons for default states Use outline icons by default. Use a fill for the active state."
+  },
+  {
+    "position": 28,
+    "name": "Avoid glow effects on primary buttons",
+    "slug": "avoid-glow-primary-actions",
+    "url": "/playbook/avoid-glow-primary-actions",
+    "text": "Avoid glow effects on primary buttons Avoid glow effects on primary buttons; use contrast and spacing instead."
+  },
+  {
+    "position": 29,
+    "name": "Animate icon state changes smoothly",
+    "slug": "animate-icon-state-changes",
+    "url": "/playbook/animate-icon-state-changes",
+    "text": "Animate icon state changes smoothly Cross-fade changing icons with opacity, scale, and blur for smoother feedback."
+  },
+  {
+    "position": 30,
+    "name": "Add space between nearby controls",
+    "slug": "give-targets-breathing-room",
+    "url": "/playbook/give-targets-breathing-room",
+    "text": "Add space between nearby controls Leave about 12px between nearby bordered controls."
+  },
+  {
+    "position": 31,
+    "name": "Keep full-width buttons inside page margins",
+    "slug": "inset-primary-actions",
+    "url": "/playbook/inset-primary-actions",
+    "text": "Keep full-width buttons inside page margins Keep full-width buttons inside the page margins, not edge to edge."
+  },
+  {
+    "position": 32,
+    "name": "Use tighter line height for headings",
+    "slug": "tighten-heading-line-height",
+    "url": "/playbook/tighten-heading-line-height",
+    "text": "Use tighter line height for headings Use a line height near 1.1 for short headings."
+  },
+  {
+    "position": 33,
+    "name": "Adjust letter spacing for large text",
+    "slug": "tune-tracking-by-size",
+    "url": "/playbook/tune-tracking-by-size",
+    "text": "Adjust letter spacing for large text Large display text often needs slightly tighter letter spacing."
+  },
+  {
+    "position": 34,
+    "name": "Confirm destructive actions before they run",
+    "slug": "confirm-destructive-actions",
+    "url": "/playbook/confirm-destructive-actions",
+    "text": "Confirm destructive actions before they run Ask for confirmation before deleting data or taking an irreversible action."
+  },
+  {
+    "position": 35,
+    "name": "Fade the edges of scrollable lists",
+    "slug": "fade-scroll-edges",
+    "url": "/playbook/fade-scroll-edges",
+    "text": "Fade the edges of scrollable lists Use a `mask-image` fade to show where a scrollable list continues."
+  },
+  {
+    "position": 36,
+    "name": "Stagger hero animations on first load",
+    "slug": "stagger-infrequent-entrances",
+    "url": "/playbook/stagger-infrequent-entrances",
+    "text": "Stagger hero animations on first load Stagger hero animations by about 100ms on first load, not during routine interactions."
+  },
+  {
+    "position": 37,
+    "name": "Keep exit animations short and subtle",
+    "slug": "keep-exits-subtle",
+    "url": "/playbook/keep-exits-subtle",
+    "text": "Keep exit animations short and subtle Keep exit animations short with a small `translateY` movement."
+  },
+  {
+    "position": 38,
+    "name": "Show nearby tooltips faster",
+    "slug": "warm-toolbar-tooltips",
+    "url": "/playbook/warm-toolbar-tooltips",
+    "text": "Show nearby tooltips faster Show nearby tooltips faster after the first tooltip opens."
+  },
+  {
+    "position": 39,
+    "name": "Use interruptible CSS transitions",
+    "slug": "use-interruptible-transitions",
+    "url": "/playbook/use-interruptible-transitions",
+    "text": "Use interruptible CSS transitions Use CSS transitions for interactive open and close states."
+  },
+  {
+    "position": 40,
+    "name": "Avoid repeated animations in routine UI",
+    "slug": "restrain-high-frequency-motion",
+    "url": "/playbook/restrain-high-frequency-motion",
+    "text": "Avoid repeated animations in routine UI Animate first-load entrances, but keep repeated actions like tab switches instant."
+  },
+  {
+    "position": 41,
+    "name": "Use ease-out instead of springs for feedback",
+    "slug": "use-ease-not-spring-for-feedback",
+    "url": "/playbook/use-ease-not-spring-for-feedback",
+    "text": "Use ease-out instead of springs for feedback Use `ease-out` for toggles and toasts because springs can wobble."
+  },
+  {
+    "position": 42,
+    "name": "Fade menus out when they close",
+    "slug": "fade-menus-out",
+    "url": "/playbook/fade-menus-out",
+    "text": "Fade menus out when they close Close menus with a short fade. Do not move them far off screen."
+  },
+  {
+    "position": 43,
+    "name": "Reserve brand colors for links and actions",
+    "slug": "reserve-brand-color-for-links",
+    "url": "/playbook/reserve-brand-color-for-links",
+    "text": "Reserve brand colors for links and actions Keep headings neutral. Use the brand color for links and actions."
+  },
+  {
+    "position": 44,
+    "name": "Use solid modal backdrops instead of blur",
+    "slug": "use-solid-modal-scrims",
+    "url": "/playbook/use-solid-modal-scrims",
+    "text": "Use solid modal backdrops instead of blur Use a solid modal backdrop instead of blur to avoid expensive full-screen rendering."
+  },
+  {
+    "position": 45,
+    "name": "Fade overflowing text instead of clipping it",
+    "slug": "fade-truncated-text",
+    "url": "/playbook/fade-truncated-text",
+    "text": "Fade overflowing text instead of clipping it Fade long labels instead of cutting them off with a hard ellipsis."
+  },
+  {
+    "position": 46,
+    "name": "Use matching enter and exit animations",
+    "slug": "enter-and-exit-on-the-same-path",
+    "url": "/playbook/enter-and-exit-on-the-same-path",
+    "text": "Use matching enter and exit animations Use matching enter and exit animations so a surface feels connected."
+  },
+  {
+    "position": 47,
+    "name": "Soften label changes with a short blur",
+    "slug": "blur-imperfect-label-morphs",
+    "url": "/playbook/blur-imperfect-label-morphs",
+    "text": "Soften label changes with a short blur Add a short blur when labels change to avoid a distracting visual flash."
+  }
+]
