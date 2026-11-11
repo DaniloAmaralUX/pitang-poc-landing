@@ -92,7 +92,7 @@ const albums: CoverFlowItem[] = [
   {
     id: 9,
     image: '/covers/cover-09.svg',
-    title: 'Padrões Jakub Krehel',
+    title: 'Padrões de Usabilidade',
     subtitle: 'Em breve',
     badge: 'Em breve',
   },
@@ -426,7 +426,7 @@ export default function HomeClient({ faq }: { faq?: React.ReactNode }) {
                 </div>
                 <div className="relative z-10">
                   <h3 className="text-lg font-semibold mb-2 tracking-tight">
-                    Jakub Krehel Standards
+                    Usability Standards
                   </h3>
                   <p className="text-[15px] leading-relaxed text-muted-foreground font-medium tracking-wide opacity-90">
                     Concentric border radii, 44px touch targets and tabular numbers.

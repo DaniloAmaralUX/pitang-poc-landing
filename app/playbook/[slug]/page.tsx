@@ -153,7 +153,7 @@ export default async function PlaybookDetailPage({ params }: PageProps) {
                 <div className="space-y-1">
                   <div className="flex items-center gap-2">
                     <span className="text-xs font-semibold text-foreground">Improve UI</span>
-                    <span className="text-[11px] text-muted-foreground">@ibelick</span>
+                    <span className="text-[11px] text-muted-foreground">Design Skill</span>
                   </div>
                   <p className="text-xs text-muted-foreground leading-relaxed">
                     Audita a superfície do produto contra evidências visuais de design, identifica problemas de layout e gera planos de implementação para agentes.
@@ -163,12 +163,12 @@ export default async function PlaybookDetailPage({ params }: PageProps) {
 
               <div className="flex items-start gap-3 p-3.5 rounded-lg border border-border bg-card">
                 <div className="w-8 h-8 rounded-lg bg-purple-500/10 text-purple-600 flex items-center justify-center shrink-0 font-bold text-xs">
-                  JK
+                  DS
                 </div>
                 <div className="space-y-1">
                   <div className="flex items-center gap-2">
                     <span className="text-xs font-semibold text-foreground">Make Interfaces Feel Better</span>
-                    <span className="text-[11px] text-muted-foreground">@jakubkrehel</span>
+                    <span className="text-[11px] text-muted-foreground">Design System</span>
                   </div>
                   <p className="text-xs text-muted-foreground leading-relaxed">
                     Princípios de engenharia de design para polimento de micro-interações, tipografia, ritmo óptico e consistência de acabamento.

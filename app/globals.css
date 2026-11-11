@@ -302,3 +302,57 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* UI Skills Playbook Demo Styles & Tokens */
+:root {
+  --color-page-default: #ffffff;
+  --color-surface-default: #ffffff;
+  --color-surface-subtle: #f5f5f5;
+  --color-fill-default: #ffffff;
+  --color-fill-subtle: #fafafa;
+  --color-fill-strong: #f0f0f0;
+  --color-fill-inverse: #151515;
+  --color-fill-accent: #e5f0ff;
+  --color-content-primary: #151515;
+  --color-content-secondary: #757575;
+  --color-content-muted: #a5a5a5;
+  --color-content-extra-muted: #e5e5e5;
+  --color-content-inverse: #ffffff;
+  --color-content-accent: #1f78ff;
+  --color-line-default: #e5e5e5;
+}
+
+.dark {
+  --color-page-default: #000000;
+  --color-surface-default: #0a0a0a;
+  --color-surface-subtle: #141414;
+  --color-fill-default: #0a0a0a;
+  --color-fill-subtle: #141414;
+  --color-fill-strong: #242424;
+  --color-fill-inverse: #ffffff;
+  --color-fill-accent: #1e293b;
+  --color-content-primary: #f5f5f5;
+  --color-content-secondary: #a3a3a3;
+  --color-content-muted: #737373;
+  --color-content-extra-muted: #262626;
+  --color-content-inverse: #0a0a0a;
+  --color-content-accent: #38bdf8;
+  --color-line-default: #262626;
+}
+
+.bg-surface-default { background-color: var(--color-surface-default); }
+.bg-surface-subtle { background-color: var(--color-surface-subtle); }
+.bg-fill-default { background-color: var(--color-fill-default); }
+.bg-fill-subtle { background-color: var(--color-fill-subtle); }
+.bg-fill-strong { background-color: var(--color-fill-strong); }
+.bg-fill-inverse { background-color: var(--color-fill-inverse); }
+.bg-fill-accent { background-color: var(--color-fill-accent); }
+.text-content-primary { color: var(--color-content-primary); }
+.text-content-secondary { color: var(--color-content-secondary); }
+.text-content-muted { color: var(--color-content-muted); }
+.text-content-extra-muted { color: var(--color-content-extra-muted); }
+.text-content-inverse { color: var(--color-content-inverse); }
+.text-content-accent { color: var(--color-content-accent); }
+.border-line-default { border-color: var(--color-line-default); }
+.ring-line-default { --tw-ring-color: var(--color-line-default); }
+.focus-visible\:outline-content-primary:focus-visible { outline-color: var(--color-content-primary); }

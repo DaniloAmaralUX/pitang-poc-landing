@@ -1,8 +1,9 @@
 'use client'
 
 import { useState } from 'react'
-import { Copy, Check, Terminal, Code2, AlertTriangle, CheckCircle2, RotateCw } from 'lucide-react'
+import { Copy, Check, Terminal, Code2 } from 'lucide-react'
 import { PlaybookRule } from '@/lib/playbook-data'
+import { PlaybookDemoRouter } from '@/components/playbook-demo-router'
 
 interface DetailClientProps {
   rule: PlaybookRule
@@ -11,11 +12,6 @@ interface DetailClientProps {
 export function RuleDetailClient({ rule }: DetailClientProps) {
   const [copiedMd, setCopiedMd] = useState(false)
   const [copiedCode, setCopiedCode] = useState(false)
-
-  // Demo state for aspect ratio if applicable
-  const [isAspect, setIsAspect] = useState(true)
-  const [isLoading, setIsLoading] = useState(false)
-  const [clsDetected, setClsDetected] = useState(false)
 
   const handleCopyMarkdown = async () => {
     try {
@@ -49,30 +45,6 @@ export function RuleDetailClient({ rule }: DetailClientProps) {
       setCopiedCode(true)
       setTimeout(() => setCopiedCode(false), 2000)
     }
-  }
-
-  const handleReplayMonet = () => {
-    setIsLoading(true)
-    setClsDetected(false)
-    setTimeout(() => {
-      setIsLoading(false)
-      if (!isAspect) {
-        setClsDetected(true)
-      }
-    }, 650)
-  }
-
-  const toggleMonetRatio = () => {
-    const next = !isAspect
-    setIsAspect(next)
-    setIsLoading(true)
-    setClsDetected(false)
-    setTimeout(() => {
-      setIsLoading(false)
-      if (!next) {
-        setClsDetected(true)
-      }
-    }, 650)
   }
 
   return (
@@ -116,93 +88,21 @@ export function RuleDetailClient({ rule }: DetailClientProps) {
         </button>
       </div>
 
-      {/* If this is the aspect ratio rule, include the interactive visual playground as a bonus */}
-      {rule.slug === 'reserve-space-with-aspect-ratio' && (
-        <div className="rounded-xl border border-border bg-card p-4 sm:p-8 flex flex-col items-center justify-center gap-6 shadow-xs">
-          <div className="w-full flex items-center justify-between border-b border-border/50 pb-4">
-            <span className="text-xs font-mono font-medium text-muted-foreground uppercase tracking-wider">
-              Simulador Visual Interativo (Monet)
-            </span>
-
-            {/* Toggle Controls */}
-            <div className="flex items-center gap-3">
-              <span className={`text-xs font-medium ${!isAspect ? 'text-foreground font-semibold' : 'text-muted-foreground'}`}>
-                Sem ratio
-              </span>
-              <button
-                type="button"
-                role="switch"
-                aria-checked={isAspect}
-                onClick={toggleMonetRatio}
-                className={`relative inline-flex h-6 w-11 shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none ${
-                  isAspect ? 'bg-primary' : 'bg-muted-foreground/30'
-                }`}
-              >
-                <span
-                  className={`pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow-sm ring-0 transition duration-200 ease-in-out ${
-                    isAspect ? 'translate-x-5' : 'translate-x-0'
-                  }`}
-                />
-              </button>
-              <span className={`text-xs font-medium ${isAspect ? 'text-foreground font-semibold' : 'text-muted-foreground'}`}>
-                Aspect ratio
-              </span>
-
-              {/* Replay Button */}
-              <button
-                type="button"
-                onClick={handleReplayMonet}
-                className="inline-flex h-7 w-7 items-center justify-center rounded-md border border-border bg-secondary/50 text-foreground hover:bg-secondary transition-colors ml-1"
-                title="Recarregar imagem e simular layout shift"
-              >
-                <RotateCw className={`h-3.5 w-3.5 ${isLoading ? 'animate-spin' : ''}`} />
-              </button>
-            </div>
-          </div>
-
-          {/* Visual Stage */}
-          <div className="flex flex-col items-center">
-            <div
-              className={`relative transition-all duration-300 rounded-lg overflow-hidden border border-black/10 dark:border-white/10 ${
-                isAspect
-                  ? 'aspect-3/4 w-[180px] sm:w-[220px] bg-muted/60'
-                  : isLoading
-                    ? 'h-[75px] w-[180px] sm:w-[220px] bg-muted/60'
-                    : 'h-[275px] w-[180px] sm:w-[220px] bg-muted/60'
-              }`}
-            >
-              {isLoading ? (
-                <div className="w-full h-full flex items-center justify-center text-xs text-muted-foreground animate-pulse">
-                  Carregando imagem...
-                </div>
-              ) : (
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Claude_Monet%2C_Impression%2C_soleil_levant.jpg/960px-Claude_Monet%2C_Impression%2C_soleil_levant.jpg"
-                  alt="Claude Monet - Impression, Sunrise"
-                  className="w-full h-full object-cover"
-                />
-              )}
-            </div>
-
-            <p className="mt-2.5 text-xs text-muted-foreground font-medium text-center">
-              Impression, Sunrise <span className="text-[10px] text-muted-foreground/70">• Claude Monet (1872)</span>
-            </p>
-          </div>
-
-          {/* Live CLS Badge */}
-          {clsDetected ? (
-            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-mono font-medium bg-amber-500/10 text-amber-600 dark:text-amber-400 border border-amber-500/30 animate-in fade-in duration-300">
-              <AlertTriangle className="w-3.5 h-3.5" />
-              <span>⚠ CLS detectado! O conteúdo saltou ao carregar a imagem.</span>
-            </div>
-          ) : (
-            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-mono font-medium bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/30">
-              <CheckCircle2 className="w-3.5 h-3.5" />
-              <span>✔ CLS = 0.00 • Espaço 3:4 reservado (Zero Layout Shift)</span>
-            </div>
-          )}
+      {/* Interactive Visual Simulator (1:1 UI Skills Playbook Demo) */}
+      <div className="w-full flex flex-col gap-2">
+        <div className="flex items-center justify-between px-1">
+          <span className="text-xs font-mono font-medium text-muted-foreground uppercase tracking-wider flex items-center gap-1.5">
+            <span className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
+            Simulador Visual Interativo (Demo ao Vivo)
+          </span>
+          <span className="text-[11px] font-mono text-muted-foreground/70 hidden sm:inline">
+            Alterne o switch para comparar antes e depois
+          </span>
         </div>
-      )}
+        <div className="w-full flex items-center justify-center overflow-hidden rounded-xl border border-border bg-card shadow-xs min-h-[340px]">
+          <PlaybookDemoRouter slug={rule.slug} />
+        </div>
+      </div>
 
       {/* Rationale & Detailed Technical Explanation */}
       <div className="space-y-4">

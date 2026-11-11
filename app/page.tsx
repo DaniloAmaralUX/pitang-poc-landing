@@ -27,7 +27,7 @@ const faqs = [
   {
     question: 'What design standards are enforced?',
     answer:
-      'The output strictly adheres to Jakub Krehel usability rules (concentric border-radius Router = Rinner + P, minimum 44px touch targets, scale-on-press feedback 0.96 and tabular numbers) and Emil Kowalski prototype picker motions.',
+      'The output strictly adheres to modern usability rules (concentric border-radius Router = Rinner + P, minimum 44px touch targets, scale-on-press feedback 0.96 and tabular numbers) and fluid spring-physics picker motions.',
   },
   {
     question: 'How do I update requirements in real-time?',

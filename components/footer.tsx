@@ -16,14 +16,9 @@ export function Footer() {
       <div className="m-footInner px-6 flex items-center justify-between">
         <div className="text-sm font-medium flex flex-wrap gap-1">
           <span>Built by</span>
-          <a
-            href="https://github.com/DaniloAmaralUX"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-foreground underline underline-offset-4 font-semibold hover:underline"
-          >
+          <span className="text-foreground font-semibold">
             Pitang Labs
-          </a>
+          </span>
           <span>· Hosted on</span>
           <a
             href="https://vercel.com/"
@@ -33,16 +28,7 @@ export function Footer() {
           >
             Vercel
           </a>
-          <span>· Standards by</span>
-          <a
-            href="https://github.com/jakubkrehel"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-foreground underline underline-offset-4 font-semibold hover:underline"
-          >
-            Jakub Krehel
-          </a>
-          <span>· Source code on</span>
+          <span>· Open Source on</span>
           <a
             href="https://github.com/DaniloAmaralUX/pitang-poc-simulator"
             target="_blank"
