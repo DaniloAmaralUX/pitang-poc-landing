@@ -192,7 +192,7 @@ export default function HomeClient({ faq }: { faq?: React.ReactNode }) {
                 </div>
               </motion.div>
               <motion.h1 variants={fadeUp} className="m-h1 mb-4 max-w-[20ch]">
-                POC Simulator.
+                Design.
               </motion.h1>
 
               <motion.div variants={fadeUp} className="m-sub mb-8 max-w-[60ch]">
