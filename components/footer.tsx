@@ -13,11 +13,18 @@ export function Footer() {
       viewport={{ once: true }}
       transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
     >
-      <div className="m-footInner px-6 flex flex-col sm:flex-row items-center justify-between gap-4 py-4">
-        <div className="text-sm font-medium flex flex-wrap gap-1.5 items-center justify-center sm:justify-start">
-          <span>Criado por</span>
-          <span className="text-[#E30613] font-bold">Pitang Labs</span>
-          <span>· Hospedado na</span>
+      <div className="m-footInner px-6 flex items-center justify-between">
+        <div className="text-sm font-medium flex flex-wrap gap-1">
+          <span>Built by</span>
+          <a
+            href="https://github.com/DaniloAmaralUX"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-foreground underline underline-offset-4 font-semibold hover:underline"
+          >
+            Pitang Labs
+          </a>
+          <span>· Hosted on</span>
           <a
             href="https://vercel.com/"
             target="_blank"
@@ -26,9 +33,16 @@ export function Footer() {
           >
             Vercel
           </a>
-          <span>· Padrões</span>
-          <span className="text-foreground font-semibold">Jakub Krehel & Emil Kowalski</span>
-          <span>· Código aberto no</span>
+          <span>· Standards by</span>
+          <a
+            href="https://github.com/jakubkrehel"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-foreground underline underline-offset-4 font-semibold hover:underline"
+          >
+            Jakub Krehel
+          </a>
+          <span>· Source code on</span>
           <a
             href="https://github.com/DaniloAmaralUX/pitang-poc-simulator"
             target="_blank"
@@ -37,9 +51,6 @@ export function Footer() {
           >
             GitHub
           </a>
-        </div>
-        <div className="text-xs text-muted-foreground font-mono">
-          © {new Date().getFullYear()} Pitang Labs
         </div>
       </div>
     </motion.footer>

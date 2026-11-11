@@ -3,9 +3,6 @@ import { Plus } from 'lucide-react'
 import HomeClient from './home-client'
 
 export const metadata: Metadata = {
-  title: 'Pitang Labs — POC Simulator | Transforme Requisitos em Protótipos',
-  description:
-    'Simulador de POC em alta fidelidade para Claude Code, Codex e Cursor. Baseado em física Motion, padrões Jakub Krehel e múltiplos breakpoints.',
   alternates: {
     canonical: '/',
   },
@@ -13,34 +10,34 @@ export const metadata: Metadata = {
 
 const faqs = [
   {
-    question: 'O que é o Pitang Labs POC Simulator?',
+    question: 'What is Pitang Labs POC Simulator?',
     answer:
-      'É uma ferramenta de Design Engineering criada pela Pitang Labs para transformar regras de negócio e requisitos em protótipos de alta fidelidade navegáveis diretamente no browser da sua IDE (Claude Code, Codex, Cursor, VS Code).',
+      'Pitang Labs POC Simulator is an open-source HTML tool that turns business rules into interactive high-fidelity prototypes directly in your IDE browser (Claude Code, Codex, Cursor, VS Code). Built with real spring physics instead of scripted timelines.',
   },
   {
-    question: 'Como funciona o comando no Claude Code e Codex?',
+    question: 'How do I run the simulator in my IDE?',
     answer:
-      'Ao digitar "npx pitang-poc" no terminal ou chat da sua IDE, o comando inicializa o servidor local e aciona o Simple Browser embutido do VS Code / Cursor / Codex, abrindo o simulador de forma imediata dentro da própria IDE.',
+      'Run the CLI command — npx pitang-poc — in your terminal or inside Claude Code / Codex chat. It starts the local server and automatically launches the IDE simple browser tab.',
   },
   {
-    question: 'Como os requisitos de negócio viram telas e fluxos?',
+    question: 'Does it support multiple breakpoints?',
     answer:
-      'A ferramenta analisa especificações em Markdown ou texto livre (regras de negócio, personas, campos obrigatórios, SLAs) e mapeia automaticamente os archetypes de interface: Autenticação Gov.br, Formulário Inteligente, Mesa de Triagem Kanban, Linha do Tempo e Dashboards.',
+      'Yes. The simulator provides 1:1 viewports for iOS (390×844px with Dynamic Island and Glass Tab Bar), Android (412×915px with Material 3 and FAB), and Desktop Web (1280px with macOS traffic lights and Kanban parallel view).',
   },
   {
-    question: 'Quais breakpoints e dispositivos são suportados?',
+    question: 'What design standards are enforced?',
     answer:
-      'A ferramenta inclui emuladores fiéis de iOS (390×844px com Dynamic Island e Glass Tab Bar), Android (412×915px com Material 3 e Floating Action Button) e Web Desktop (1280px com moldura macOS, omnibar e visualização paralela de 3 colunas).',
+      'The output strictly adheres to Jakub Krehel usability rules (concentric border-radius Router = Rinner + P, minimum 44px touch targets, scale-on-press feedback 0.96 and tabular numbers) and Emil Kowalski prototype picker motions.',
   },
   {
-    question: 'Quais regras de design e usabilidade são aplicadas?',
+    question: 'How do I update requirements in real-time?',
     answer:
-      'Todas as interfaces seguem os padrões de Jakub Krehel (geometria concêntrica Router = Rinner + P, alvos de toque mínimos de 44px, feedback tátil scale-on-press 0.96 e números tabulares) e componentes de Motion de Emil Kowalski (glass pill picker com timing 250ms cubic-bezier e atalhos de teclado).',
+      'You can describe requirements in Markdown or prompt in chat. The tool ingests requirements and rebuilds the POC live via hot-reload without reloading your IDE window.',
   },
   {
-    question: 'A ferramenta é open source?',
+    question: 'Is it free and open source?',
     answer:
-      'Sim. O Pitang Labs POC Simulator é 100% open source sob licença MIT, disponível para toda a comunidade no GitHub.',
+      'Yes. Pitang Labs POC Simulator is MIT-licensed and open source on GitHub, free for personal and commercial projects.',
   },
 ]
 
@@ -65,10 +62,10 @@ function FaqSection() {
     >
       <div className="max-w-3xl mx-auto px-6">
         <h2 className="text-2xl md:text-3xl font-semibold tracking-tight mb-3 text-center">
-          Perguntas Frequentes
+          Frequently asked questions
         </h2>
         <p className="text-base text-muted-foreground leading-relaxed mb-10 text-center text-balance">
-          Tudo sobre como executar o simulador de POCs na sua IDE e acelerar o desenvolvimento de produtos digitais.
+          Everything about running the Pitang POC Simulator directly in your IDE.
         </p>
         <div className="border-y border-dashed border-border/70 divide-y divide-dashed divide-border/70">
           {faqs.map((faq) => (
