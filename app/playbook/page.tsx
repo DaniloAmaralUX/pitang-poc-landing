@@ -67,7 +67,7 @@ export default function PlaybookPage() {
               href="/"
               className="font-medium text-primary hover:underline shrink-0 inline-flex items-center gap-1"
             >
-              Abrir POC Simulator →
+              Ver Demonstração →
             </Link>
           </div>
 

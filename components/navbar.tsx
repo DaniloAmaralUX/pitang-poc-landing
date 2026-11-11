@@ -50,7 +50,7 @@ export function Navbar() {
               </svg>
             </div>
 
-            <span className="font-bold">POC Simulator</span>
+            <span className="font-bold">Pitang Labs</span>
           </Link>
 
           <nav className="m-navLinks" aria-label="Primary">

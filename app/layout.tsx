@@ -9,21 +9,20 @@ const SITE_URL = 'https://pitang-poc-landing.vercel.app'
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: 'Pitang Labs — POC Simulator | Transforme Requisitos em Protótipos Interativos',
-    template: '%s · Pitang Labs POC Simulator',
+    default: 'Pitang Labs — Design Engineering & Usabilidade',
+    template: '%s · Pitang Labs',
   },
   description:
-    'Simulador de POC em alta fidelidade diretamente na sua IDE (Claude Code, Codex, Cursor). Baseado em Motion, padrões Jakub Krehel e múltiplos breakpoints.',
+    'Iniciativa de engenharia de design e usabilidade da Pitang Labs. Padrões de interface, componentes com Motion e catálogo com 47 regras práticas de usabilidade.',
   keywords: [
     'pitang-labs',
-    'poc simulator',
+    'design engineering',
+    'usabilidade',
+    'playbook',
     'claude code',
     'codex',
-    'ide browser',
-    'prototype viewer',
     'jakub krehel',
     'emil kowalski',
-    'design engineering',
     'react coverflow',
     'motion',
     'tailwind',
@@ -40,19 +39,19 @@ export const metadata: Metadata = {
     follow: true,
   },
   openGraph: {
-    title: 'Pitang Labs — POC Simulator | Transforme Requisitos em Protótipos',
+    title: 'Pitang Labs — Design Engineering & Usabilidade',
     description:
-      'Simulador de POC em alta fidelidade diretamente na sua IDE com Claude Code e Codex.',
+      'Engenharia de design e padrões de usabilidade em alta fidelidade diretamente na sua IDE com Claude Code e Codex.',
     url: SITE_URL,
-    siteName: 'Pitang Labs POC Simulator',
+    siteName: 'Pitang Labs',
     locale: 'pt_BR',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Pitang Labs — POC Simulator',
+    title: 'Pitang Labs — Design Engineering',
     description:
-      'Simulador de POC em alta fidelidade diretamente na sua IDE com Claude Code e Codex.',
+      'Engenharia de design e padrões de usabilidade em alta fidelidade diretamente na sua IDE com Claude Code e Codex.',
   },
 }
 

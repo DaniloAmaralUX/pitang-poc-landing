@@ -10,19 +10,19 @@ export const metadata: Metadata = {
 
 const faqs = [
   {
-    question: 'What is Pitang Labs POC Simulator?',
+    question: 'What is Pitang Labs Design Engineering?',
     answer:
-      'Pitang Labs POC Simulator is an open-source HTML tool that turns business rules into interactive high-fidelity prototypes directly in your IDE browser (Claude Code, Codex, Cursor, VS Code). Built with real spring physics instead of scripted timelines.',
+      'Pitang Labs Design Engineering is an open-source initiative that turns usability standards into interactive high-fidelity components directly in your IDE browser (Claude Code, Codex, Cursor, VS Code). Built with real spring physics instead of scripted timelines.',
   },
   {
-    question: 'How do I run the simulator in my IDE?',
+    question: 'How do I run the tools in my IDE?',
     answer:
       'Run the CLI command — npx pitang-poc — in your terminal or inside Claude Code / Codex chat. It starts the local server and automatically launches the IDE simple browser tab.',
   },
   {
     question: 'Does it support multiple breakpoints?',
     answer:
-      'Yes. The simulator provides 1:1 viewports for iOS (390×844px with Dynamic Island and Glass Tab Bar), Android (412×915px with Material 3 and FAB), and Desktop Web (1280px with macOS traffic lights and Kanban parallel view).',
+      'Yes. The interface provides 1:1 viewports for iOS (390×844px with Dynamic Island and Glass Tab Bar), Android (412×915px with Material 3 and FAB), and Desktop Web (1280px with macOS traffic lights and Kanban parallel view).',
   },
   {
     question: 'What design standards are enforced?',
@@ -32,12 +32,12 @@ const faqs = [
   {
     question: 'How do I update requirements in real-time?',
     answer:
-      'You can describe requirements in Markdown or prompt in chat. The tool ingests requirements and rebuilds the POC live via hot-reload without reloading your IDE window.',
+      'You can describe requirements in Markdown or prompt in chat. The tool ingests requirements and rebuilds the design live via hot-reload without reloading your IDE window.',
   },
   {
     question: 'Is it free and open source?',
     answer:
-      'Yes. Pitang Labs POC Simulator is MIT-licensed and open source on GitHub, free for personal and commercial projects.',
+      'Yes. Pitang Labs is MIT-licensed and open source on GitHub, free for personal and commercial projects.',
   },
 ]
 
@@ -65,7 +65,7 @@ function FaqSection() {
           Frequently asked questions
         </h2>
         <p className="text-base text-muted-foreground leading-relaxed mb-10 text-center text-balance">
-          Everything about running the Pitang POC Simulator directly in your IDE.
+          Everything about Pitang Labs design engineering standards and usability rules.
         </p>
         <div className="border-y border-dashed border-border/70 divide-y divide-dashed divide-border/70">
           {faqs.map((faq) => (
