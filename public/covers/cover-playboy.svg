@@ -27,8 +27,8 @@
   <!-- Typography -->
   <g fill="white" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
     <text x="60" y="100" font-size="24" opacity="0.7" font-weight="600" letter-spacing="1">Pitang Labs</text>
-    <text x="60" y="180" font-size="72" font-weight="700" letter-spacing="-2">Playboy</text>
-    <text x="60" y="250" font-size="72" font-weight="700" letter-spacing="-2">Playbook</text>
+    <text x="60" y="200" font-size="84" font-weight="700" letter-spacing="-2">Playbook</text>
+    <text x="60" y="260" font-size="26" opacity="0.8" font-weight="500">UI &amp; Usabilidade • 47 Regras</text>
     
     <!-- Decorative element -->
     <circle cx="700" cy="700" r="60" fill="rgba(255,255,255,0.1)"/>

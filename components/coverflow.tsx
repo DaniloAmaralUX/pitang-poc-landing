@@ -110,6 +110,7 @@ export interface CoverFlowItem {
   title: string
   subtitle?: string
   href?: string
+  badge?: string
 }
 
 export interface RenderImageProps {
@@ -429,11 +430,16 @@ export function CoverFlow({
                   </span>
                 </a>
               ) : (
-                <h3 className="text-2xl font-semibold text-foreground tracking-tight drop-shadow-md">
-                  {items[activeIndex]?.title}
-                </h3>
+                <div className="inline-flex items-center gap-2">
+                  <h3 className="text-2xl font-semibold text-foreground tracking-tight drop-shadow-md">
+                    {items[activeIndex]?.title}
+                  </h3>
+                  <span className="text-[11px] font-mono uppercase tracking-wider bg-amber-500/10 text-amber-500 dark:text-amber-400 px-2.5 py-0.5 rounded-full border border-amber-500/20">
+                    Em breve
+                  </span>
+                </div>
               )}
-              {items[activeIndex]?.subtitle && (
+              {items[activeIndex]?.subtitle && items[activeIndex]?.subtitle !== 'Em breve' && (
                 <p className="text-foreground/60 text-sm mt-1 font-medium tracking-wide">
                   {items[activeIndex]?.subtitle}
                 </p>
@@ -545,6 +551,25 @@ const CoverFlowItemCard = memo(function CoverFlowItemCard({
             loading: isActive ? 'eager' : 'lazy',
           })}
           <div className="absolute inset-0 bg-linear-to-tr from-white/10 to-transparent opacity-0 dark:opacity-20 pointer-events-none z-10" />
+
+          {item.badge && (
+            <div className="absolute top-4 right-4 z-30 pointer-events-none">
+              <span
+                className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-mono font-medium tracking-wider uppercase border backdrop-blur-md shadow-lg ${
+                  item.href
+                    ? 'bg-emerald-500/20 text-emerald-300 border-emerald-500/40 shadow-emerald-500/10'
+                    : 'bg-black/60 text-amber-300/90 border-amber-500/30 shadow-black/40'
+                }`}
+              >
+                <span
+                  className={`w-1.5 h-1.5 rounded-full ${
+                    item.href ? 'bg-emerald-400 animate-pulse' : 'bg-amber-400'
+                  }`}
+                />
+                {item.badge}
+              </span>
+            </div>
+          )}
         </div>
       </div>
 

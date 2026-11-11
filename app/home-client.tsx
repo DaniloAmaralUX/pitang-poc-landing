@@ -26,78 +26,89 @@ const MotionLink = motion.create(Link)
 
 const albums: CoverFlowItem[] = [
   {
-    id: 'playboy',
-    image: '/covers/cover-playboy.svg',
-    title: 'Playboy',
+    id: 'playbook',
+    image: '/covers/cover-playbook.svg',
+    title: 'Playbook',
     subtitle: 'Playbook de UI • Padrões e Regras de Usabilidade',
     href: '/playbook',
+    badge: 'Disponível',
   },
   {
     id: 1,
     image: '/covers/cover-01.svg',
     title: 'Acesso Cidadão',
-    subtitle: 'Gov.br • Biometria • Nível Ouro',
+    subtitle: 'Em breve',
+    badge: 'Em breve',
   },
   {
     id: 2,
     image: '/covers/cover-02.svg',
     title: 'Nova Manifestação',
-    subtitle: 'Formulário Inteligente • Upload IA • 2026',
+    subtitle: 'Em breve',
+    badge: 'Em breve',
   },
   {
     id: 3,
     image: '/covers/cover-03.svg',
     title: 'Mesa de Triagem',
-    subtitle: 'Kanban 3 Colunas • Contagem SLA • 2026',
+    subtitle: 'Em breve',
+    badge: 'Em breve',
   },
   {
     id: 4,
     image: '/covers/cover-04.svg',
     title: 'Linha do Tempo',
-    subtitle: 'Rastreabilidade • Protocolo Digital • 2026',
+    subtitle: 'Em breve',
+    badge: 'Em breve',
   },
   {
     id: 5,
     image: '/covers/cover-05.svg',
     title: 'Dashboard Executivo',
-    subtitle: 'Telemetria em Tempo Real • CSAT 94% • 2026',
+    subtitle: 'Em breve',
+    badge: 'Em breve',
   },
   {
     id: 6,
     image: '/covers/cover-10.svg',
     title: 'Emulador iOS',
-    subtitle: 'Dynamic Island • Viewport 390×844px • 2026',
+    subtitle: 'Em breve',
+    badge: 'Em breve',
   },
   {
     id: 7,
     image: '/covers/cover-07.svg',
     title: 'Emulador Android',
-    subtitle: 'Material 3 • Floating Action Button • 2026',
+    subtitle: 'Em breve',
+    badge: 'Em breve',
   },
   {
     id: 8,
     image: '/covers/cover-08.svg',
     title: 'Desktop Web',
-    subtitle: 'Workspace 1280px • Traffic Lights • 2026',
+    subtitle: 'Em breve',
+    badge: 'Em breve',
   },
   {
     id: 9,
     image: '/covers/cover-09.svg',
     title: 'Padrões Jakub Krehel',
-    subtitle: 'Geometria Concêntrica • Touch 44px • 2026',
+    subtitle: 'Em breve',
+    badge: 'Em breve',
   },
   {
     id: 10,
     image: '/covers/cover-06.svg',
     title: 'Claude Code & Codex',
-    subtitle: 'npx pitang-poc • Abertura Automática na IDE • 2026',
+    subtitle: 'Em breve',
+    badge: 'Em breve',
   },
 ]
 
 export default function HomeClient({ faq }: { faq?: React.ReactNode }) {
   const [copied, setCopied] = useState(false)
   const [itemSize, setItemSize] = useState({ width: 400, height: 400 })
-  const [initialIndex, setInitialIndex] = useState(0)
+  const [initialIndex] = useState(0)
   const installCommand = useMemo(
     () => 'npx pitang-poc',
     [],
@@ -239,11 +250,6 @@ export default function HomeClient({ faq }: { faq?: React.ReactNode }) {
                 initial={{ opacity: 0, y: 54 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.5 }}
-                onViewportEnter={() => {
-                  setTimeout(() => {
-                    setInitialIndex(5)
-                  }, 1200)
-                }}
                 transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
                 className="relative w-full h-[500px] sm:h-[620px] aspect-[16/9] md:aspect-[2/1] flex flex-col items-center justify-center"
               >
