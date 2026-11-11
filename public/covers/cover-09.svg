@@ -26,7 +26,7 @@
   <rect x="24" y="24" width="752" height="752" rx="40" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.18)" stroke-width="1.5" />
   <rect x="36" y="36" width="728" height="728" rx="28" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="1" />
 
-  <!-- Top Badge & Pitang Labs Branding -->
+  <!-- Top Badge and Pitang Labs Branding -->
   <g transform="translate(64, 68)">
     <!-- Pitang Labs Pill -->
     <rect width="180" height="34" rx="17" fill="rgba(227,6,19,0.25)" stroke="#E30613" stroke-width="1.2" />
@@ -45,8 +45,8 @@
 
   <!-- Main Headline Typography -->
   <g transform="translate(64, 260)" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">
-    <text x="0" y="0" font-size="58" font-weight="800" letter-spacing="-1.5">Padrões de Usabilidade</text>
-    <text x="0" y="68" font-size="58" font-weight="800" letter-spacing="-1.5" fill="#C084FC">Jakub Krehel & Emil</text>
+    <text x="0" y="0" font-size="56" font-weight="800" letter-spacing="-1.5">Padrões de Usabilidade</text>
+    <text x="0" y="68" font-size="56" font-weight="800" letter-spacing="-1.5" fill="#C084FC">Jakub Krehel e Emil</text>
     <text x="0" y="130" font-size="20" font-weight="400" fill="rgba(255,255,255,0.72)" letter-spacing="-0.2">Raios concêntricos • 44px touch • Glass pill picker</text>
   </g>
 
@@ -69,7 +69,7 @@
 
     <!-- Action Pill Button -->
     <rect x="28" y="184" width="160" height="38" rx="19" fill="#FFFFFF" />
-    <text x="108" y="208" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" fill="#000000">Testar Fluxo →</text>
+    <text x="108" y="208" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" fill="#000000">Testar Fluxo &gt;</text>
 
     <!-- Interactive Metric Box on Right -->
     <g transform="translate(480, 68)">

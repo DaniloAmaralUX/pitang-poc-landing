@@ -4,13 +4,23 @@ const path = require('path');
 const coversDir = path.join(__dirname, '..', 'public', 'covers');
 if (!fs.existsSync(coversDir)) fs.mkdirSync(coversDir, { recursive: true });
 
+function escapeXml(str) {
+  if (!str) return '';
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&apos;');
+}
+
 const covers = [
   {
     filename: 'cover-01.svg',
     tag: 'FLUXO 01 • AUTENTICAÇÃO',
     titleLine1: 'Acesso Cidadão',
-    titleLine2: 'Gov.br & Biometria',
-    subtitle: 'Validação em 2 etapas • Nível Prata & Ouro',
+    titleLine2: 'Gov.br e Biometria',
+    subtitle: 'Validação em 2 etapas • Nível Prata e Ouro',
     bgStart: '#0B132B',
     bgEnd: '#1C2541',
     mesh1: '#3A506B',
@@ -22,8 +32,8 @@ const covers = [
     filename: 'cover-02.svg',
     tag: 'FLUXO 02 • FORMULÁRIO',
     titleLine1: 'Manifestação',
-    titleLine2: 'Preditiva & Anexos',
-    subtitle: 'Upload drag & drop • Sugestões preditivas com IA',
+    titleLine2: 'Preditiva e Anexos',
+    subtitle: 'Upload drag e drop • Sugestões preditivas com IA',
     bgStart: '#022C22',
     bgEnd: '#064E3B',
     mesh1: '#047857',
@@ -35,7 +45,7 @@ const covers = [
     filename: 'cover-03.svg',
     tag: 'FLUXO 03 • OPERAÇÃO',
     titleLine1: 'Mesa de Triagem',
-    titleLine2: 'Kanban & SLAs',
+    titleLine2: 'Kanban e SLAs',
     subtitle: '3 colunas operacionais • SLA com contagem regressiva',
     bgStart: '#1E1B4B',
     bgEnd: '#312E81',
@@ -48,7 +58,7 @@ const covers = [
     filename: 'cover-04.svg',
     tag: 'FLUXO 04 • AUDITORIA',
     titleLine1: 'Linha do Tempo',
-    titleLine2: '& Protocolo Oficial',
+    titleLine2: 'Protocolo Oficial',
     subtitle: 'Rastreabilidade ponta a ponta • QR Code de autenticidade',
     bgStart: '#451A03',
     bgEnd: '#78350F',
@@ -61,7 +71,7 @@ const covers = [
     filename: 'cover-05.svg',
     tag: 'FLUXO 05 • TELEMETRIA',
     titleLine1: 'Dashboard Executivo',
-    titleLine2: '& Métricas CSAT',
+    titleLine2: 'Métricas CSAT',
     subtitle: 'Tempo médio 4.2h • 98.4% resolutividade • Pitang Labs',
     bgStart: '#4C0519',
     bgEnd: '#881337',
@@ -75,7 +85,7 @@ const covers = [
     tag: 'BREAKPOINT 01 • MOBILE',
     titleLine1: 'Emulador iOS',
     titleLine2: 'Dynamic Island',
-    subtitle: '390×844px • Status bar 09:41 • Glass Tab Bar',
+    subtitle: '390x844px • Status bar 09:41 • Glass Tab Bar',
     bgStart: '#0F172A',
     bgEnd: '#1E293B',
     mesh1: '#334155',
@@ -87,8 +97,8 @@ const covers = [
     filename: 'cover-07.svg',
     tag: 'BREAKPOINT 02 • MOBILE',
     titleLine1: 'Emulador Android',
-    titleLine2: 'Material 3 & FAB',
-    subtitle: '412×915px • Câmera punch-hole • Floating Action Button',
+    titleLine2: 'Material 3 e FAB',
+    subtitle: '412x915px • Câmera punch-hole • Floating Action Button',
     bgStart: '#082F49',
     bgEnd: '#0C4A6E',
     mesh1: '#0284C7',
@@ -113,7 +123,7 @@ const covers = [
     filename: 'cover-09.svg',
     tag: 'DESIGN ENGINEERING',
     titleLine1: 'Padrões de Usabilidade',
-    titleLine2: 'Jakub Krehel & Emil',
+    titleLine2: 'Jakub Krehel e Emil',
     subtitle: 'Raios concêntricos • 44px touch • Glass pill picker',
     bgStart: '#3B0764',
     bgEnd: '#581C87',
@@ -125,7 +135,7 @@ const covers = [
   {
     filename: 'cover-10.svg',
     tag: 'IDE INTEGRATION',
-    titleLine1: 'Claude Code & Codex',
+    titleLine1: 'Claude Code e Codex',
     titleLine2: 'npx pitang-poc',
     subtitle: 'Abre no navegador interno da IDE com hot-reload',
     bgStart: '#172554',
@@ -138,6 +148,12 @@ const covers = [
 ];
 
 function generateSvg(item) {
+  const tagEscaped = escapeXml(item.tag);
+  const title1Escaped = escapeXml(item.titleLine1);
+  const title2Escaped = escapeXml(item.titleLine2);
+  const subtitleEscaped = escapeXml(item.subtitle);
+  const badgeEscaped = escapeXml(item.badge);
+
   return `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800">
   <defs>
     <linearGradient id="bg-${item.filename}" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -166,7 +182,7 @@ function generateSvg(item) {
   <rect x="24" y="24" width="752" height="752" rx="40" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.18)" stroke-width="1.5" />
   <rect x="36" y="36" width="728" height="728" rx="28" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="1" />
 
-  <!-- Top Badge & Pitang Labs Branding -->
+  <!-- Top Badge and Pitang Labs Branding -->
   <g transform="translate(64, 68)">
     <!-- Pitang Labs Pill -->
     <rect width="180" height="34" rx="17" fill="rgba(227,6,19,0.25)" stroke="#E30613" stroke-width="1.2" />
@@ -174,20 +190,20 @@ function generateSvg(item) {
     <text x="32" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" letter-spacing="1">PITANG LABS</text>
 
     <!-- Category Tag -->
-    <text x="210" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="${item.accent}" letter-spacing="1.5">${item.tag}</text>
+    <text x="210" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="${item.accent}" letter-spacing="1.5">${tagEscaped}</text>
   </g>
 
   <!-- Feature Badge Right -->
   <g transform="translate(540, 68)">
     <rect width="196" height="34" rx="8" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.15)" stroke-width="1" />
-    <text x="98" y="21" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" letter-spacing="1.2">${item.badge}</text>
+    <text x="98" y="21" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" letter-spacing="1.2">${badgeEscaped}</text>
   </g>
 
   <!-- Main Headline Typography -->
   <g transform="translate(64, 260)" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">
-    <text x="0" y="0" font-size="58" font-weight="800" letter-spacing="-1.5">${item.titleLine1}</text>
-    <text x="0" y="68" font-size="58" font-weight="800" letter-spacing="-1.5" fill="${item.accent}">${item.titleLine2}</text>
-    <text x="0" y="130" font-size="20" font-weight="400" fill="rgba(255,255,255,0.72)" letter-spacing="-0.2">${item.subtitle}</text>
+    <text x="0" y="0" font-size="56" font-weight="800" letter-spacing="-1.5">${title1Escaped}</text>
+    <text x="0" y="68" font-size="56" font-weight="800" letter-spacing="-1.5" fill="${item.accent}">${title2Escaped}</text>
+    <text x="0" y="130" font-size="20" font-weight="400" fill="rgba(255,255,255,0.72)" letter-spacing="-0.2">${subtitleEscaped}</text>
   </g>
 
   <!-- Card Center Visual Graphic Card -->
@@ -199,7 +215,7 @@ function generateSvg(item) {
     <circle cx="28" cy="21" r="5" fill="#EF4444" />
     <circle cx="46" cy="21" r="5" fill="#F59E0B" />
     <circle cx="64" cy="21" r="5" fill="#10B981" />
-    <text x="90" y="25" font-family="monospace" font-size="12" fill="rgba(255,255,255,0.5)">poc-simulator // ${item.tag.toLowerCase()}</text>
+    <text x="90" y="25" font-family="monospace" font-size="12" fill="rgba(255,255,255,0.5)">poc-simulator // ${tagEscaped.toLowerCase()}</text>
 
     <!-- Simulated UI Bars / Content -->
     <rect x="28" y="70" width="280" height="24" rx="6" fill="${item.accent}" opacity="0.8" />
@@ -209,7 +225,7 @@ function generateSvg(item) {
 
     <!-- Action Pill Button -->
     <rect x="28" y="184" width="160" height="38" rx="19" fill="#FFFFFF" />
-    <text x="108" y="208" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" fill="#000000">Testar Fluxo →</text>
+    <text x="108" y="208" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" fill="#000000">Testar Fluxo &gt;</text>
 
     <!-- Interactive Metric Box on Right -->
     <g transform="translate(480, 68)">
@@ -228,4 +244,4 @@ covers.forEach(c => {
   fs.writeFileSync(filePath, generateSvg(c), 'utf-8');
 });
 
-console.log('10 covers generated.');
+console.log('All 10 covers regenerated with XML-safe entities!');
