@@ -3,6 +3,9 @@ import { Plus } from 'lucide-react'
 import HomeClient from './home-client'
 
 export const metadata: Metadata = {
+  title: 'Pitang Labs — POC Simulator | Transforme Requisitos em Protótipos',
+  description:
+    'Simulador de POC em alta fidelidade para Claude Code, Codex e Cursor. Baseado em física Motion, padrões Jakub Krehel e múltiplos breakpoints.',
   alternates: {
     canonical: '/',
   },
@@ -10,34 +13,34 @@ export const metadata: Metadata = {
 
 const faqs = [
   {
-    question: 'What is Cover Flow?',
+    question: 'O que é o Pitang Labs POC Simulator?',
     answer:
-      'Cover Flow is the iconic 3D carousel interaction Apple introduced in iTunes and iOS, where album covers fan out in 3D space and snap to center as you browse. This project is an open-source recreation of that coverflow effect as a React component, rebuilt with real spring physics instead of scripted animations.',
+      'É uma ferramenta de Design Engineering criada pela Pitang Labs para transformar regras de negócio e requisitos em protótipos de alta fidelidade navegáveis diretamente no browser da sua IDE (Claude Code, Codex, Cursor, VS Code).',
   },
   {
-    question: 'How do I add a coverflow carousel to a React app?',
+    question: 'Como funciona o comando no Claude Code e Codex?',
     answer:
-      'Install the Cover Flow component with the shadcn CLI — npx shadcn add https://useplanes.com/r/cover-flow.json — or from npm as @ashishgogula/coverflow. Then render the CoverFlow component with your items. It works in any modern React or Next.js App Router project.',
+      'Ao digitar "npx pitang-poc" no terminal ou chat da sua IDE, o comando inicializa o servidor local e aciona o Simple Browser embutido do VS Code / Cursor / Codex, abrindo o simulador de forma imediata dentro da própria IDE.',
   },
   {
-    question: 'Does it work with Next.js, Tailwind CSS, and shadcn/ui?',
+    question: 'Como os requisitos de negócio viram telas e fluxos?',
     answer:
-      'Yes. The component is written in TypeScript, styled with Tailwind CSS, follows shadcn/ui conventions, and supports dark mode via next-themes. Isolated 3D transforms mean the surrounding layout never shifts.',
+      'A ferramenta analisa especificações em Markdown ou texto livre (regras de negócio, personas, campos obrigatórios, SLAs) e mapeia automaticamente os archetypes de interface: Autenticação Gov.br, Formulário Inteligente, Mesa de Triagem Kanban, Linha do Tempo e Dashboards.',
   },
   {
-    question: 'Is the coverflow component accessible?',
+    question: 'Quais breakpoints e dispositivos são suportados?',
     answer:
-      'Yes. It supports arrow-key navigation, focus management, and reduced-motion preferences, alongside drag, touch, click-to-snap, and horizontal scroll-wheel input.',
+      'A ferramenta inclui emuladores fiéis de iOS (390×844px com Dynamic Island e Glass Tab Bar), Android (412×915px com Material 3 e Floating Action Button) e Web Desktop (1280px com moldura macOS, omnibar e visualização paralela de 3 colunas).',
   },
   {
-    question: "How is this different from Swiper's coverflow effect?",
+    question: 'Quais regras de design e usabilidade são aplicadas?',
     answer:
-      "Swiper's coverflow effect applies CSS transforms along a fixed timeline. This component drives every card with real-time, interruptible spring physics from Motion (Framer Motion), with velocity-aware throwing and 1:1 gesture tracking — so it feels like the original iOS Cover Flow rather than a slideshow transition.",
+      'Todas as interfaces seguem os padrões de Jakub Krehel (geometria concêntrica Router = Rinner + P, alvos de toque mínimos de 44px, feedback tátil scale-on-press 0.96 e números tabulares) e componentes de Motion de Emil Kowalski (glass pill picker com timing 250ms cubic-bezier e atalhos de teclado).',
   },
   {
-    question: 'Is it free to use?',
+    question: 'A ferramenta é open source?',
     answer:
-      'Yes. Cover Flow is MIT-licensed and open source on GitHub, free for personal and commercial projects.',
+      'Sim. O Pitang Labs POC Simulator é 100% open source sob licença MIT, disponível para toda a comunidade no GitHub.',
   },
 ]
 
@@ -62,11 +65,10 @@ function FaqSection() {
     >
       <div className="max-w-3xl mx-auto px-6">
         <h2 className="text-2xl md:text-3xl font-semibold tracking-tight mb-3 text-center">
-          Frequently asked questions
+          Perguntas Frequentes
         </h2>
         <p className="text-base text-muted-foreground leading-relaxed mb-10 text-center text-balance">
-          Everything about using the Cover Flow coverflow component in your
-          React project.
+          Tudo sobre como executar o simulador de POCs na sua IDE e acelerar o desenvolvimento de produtos digitais.
         </p>
         <div className="border-y border-dashed border-border/70 divide-y divide-dashed divide-border/70">
           {faqs.map((faq) => (

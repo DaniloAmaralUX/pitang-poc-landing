@@ -13,18 +13,11 @@ export function Footer() {
       viewport={{ once: true }}
       transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
     >
-      <div className="m-footInner px-6 flex items-center justify-between">
-        <div className="text-sm font-medium flex flex-wrap gap-1">
-          <span>Built by</span>
-          <a
-            href="https://ashishgogula.in"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-foreground underline underline-offset-4 font-semibold hover:underline"
-          >
-            Ashish Gogula
-          </a>
-          <span>· Hosted on</span>
+      <div className="m-footInner px-6 flex flex-col sm:flex-row items-center justify-between gap-4 py-4">
+        <div className="text-sm font-medium flex flex-wrap gap-1.5 items-center justify-center sm:justify-start">
+          <span>Criado por</span>
+          <span className="text-[#E30613] font-bold">Pitang Labs</span>
+          <span>· Hospedado na</span>
           <a
             href="https://vercel.com/"
             target="_blank"
@@ -33,18 +26,11 @@ export function Footer() {
           >
             Vercel
           </a>
-          <span>· Part of</span>
+          <span>· Padrões</span>
+          <span className="text-foreground font-semibold">Jakub Krehel & Emil Kowalski</span>
+          <span>· Código aberto no</span>
           <a
-            href="https://useplanes.com/?utm_source=coverflow"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-foreground underline underline-offset-4 font-semibold hover:underline"
-          >
-            Planes
-          </a>
-          <span>· Source code on</span>
-          <a
-            href="https://github.com/ashishgogula/coverflow"
+            href="https://github.com/DaniloAmaralUX/pitang-poc-simulator"
             target="_blank"
             rel="noopener noreferrer"
             className="text-foreground underline underline-offset-4 font-semibold hover:underline"
@@ -52,12 +38,9 @@ export function Footer() {
             GitHub
           </a>
         </div>
-        <Link
-          href="/changelog"
-          className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
-        >
-          Changelog
-        </Link>
+        <div className="text-xs text-muted-foreground font-mono">
+          © {new Date().getFullYear()} Pitang Labs
+        </div>
       </div>
     </motion.footer>
   )
