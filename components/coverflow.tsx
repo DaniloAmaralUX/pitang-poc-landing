@@ -109,6 +109,7 @@ export interface CoverFlowItem {
   image: string
   title: string
   subtitle?: string
+  href?: string
 }
 
 export interface RenderImageProps {
@@ -304,6 +305,9 @@ export function CoverFlow({
   const handleCardClick = useCallback(
     (item: CoverFlowItem, index: number) => {
       if (index === activeIndexRef.current) {
+        if (item.href) {
+          window.location.href = item.href
+        }
         onItemClickRef.current?.(item, index)
       } else if (enableClickToSnapRef.current) {
         jumpToIndex(index)
@@ -412,9 +416,23 @@ export function CoverFlow({
               transition={{ duration: prefersReducedMotion ? 0 : 0.25, ease: 'easeOut' }}
               className="text-center"
             >
-              <h3 className="text-2xl font-semibold text-foreground tracking-tight drop-shadow-md">
-                {items[activeIndex]?.title}
-              </h3>
+              {items[activeIndex]?.href ? (
+                <a
+                  href={items[activeIndex].href}
+                  className="pointer-events-auto inline-flex items-center gap-2 group/title hover:opacity-90 transition-opacity cursor-pointer"
+                >
+                  <h3 className="text-2xl font-semibold text-foreground tracking-tight drop-shadow-md underline underline-offset-4 decoration-white/30 group-hover/title:decoration-white">
+                    {items[activeIndex]?.title}
+                  </h3>
+                  <span className="text-[11px] font-mono uppercase tracking-wider bg-white/10 text-white px-2 py-0.5 rounded-full border border-white/20">
+                    Abrir ↗
+                  </span>
+                </a>
+              ) : (
+                <h3 className="text-2xl font-semibold text-foreground tracking-tight drop-shadow-md">
+                  {items[activeIndex]?.title}
+                </h3>
+              )}
               {items[activeIndex]?.subtitle && (
                 <p className="text-foreground/60 text-sm mt-1 font-medium tracking-wide">
                   {items[activeIndex]?.subtitle}

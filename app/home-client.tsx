@@ -26,6 +26,13 @@ const MotionLink = motion.create(Link)
 
 const albums: CoverFlowItem[] = [
   {
+    id: 'playboy',
+    image: '/covers/cover-playboy.svg',
+    title: 'Playboy',
+    subtitle: 'Playbook de UI • Padrões e Regras de Usabilidade',
+    href: '/playbook',
+  },
+  {
     id: 1,
     image: '/covers/cover-01.svg',
     title: 'Acesso Cidadão',

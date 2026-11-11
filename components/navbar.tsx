@@ -57,6 +57,9 @@ export function Navbar() {
             <Link className="m-navLink" href="/#demo">
               Demo
             </Link>
+            <Link className="m-navLink" href="/playbook">
+              Playbook
+            </Link>
             <Link className="m-navLink" href="/#features">
               Features
             </Link>
